@@ -30,7 +30,7 @@ export const getStaticProps = async ({ params }) => {
     content_type: 'articoloBlog',
     'fields.slug': params.slug
   })
-
+  // 059012597451
   if (!items.length) {
     return {
       redirect: {
