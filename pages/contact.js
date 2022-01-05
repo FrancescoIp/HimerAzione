@@ -6,6 +6,7 @@ export default function Contact() {
 
     return (
         <div className='container'>
+            <p>test</p>
             <ContactForm/>
         </div>
     )
