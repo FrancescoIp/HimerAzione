@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { createClient } from 'contentful'
-import RecipeCard from '../components/RecipeCard'
+import RecipeCard from '../../components/RecipeCard'
+import ArticoloCard from '../../components/ArticoloCard'
 
 export async function getStaticProps() {
 
@@ -9,24 +11,25 @@ export async function getStaticProps() {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   })
 
-  const res = await client.getEntries({ content_type: 'articoloBlog' })
+  const res = await client.getEntries({ content_type: 'blogPost' })
   
-  console.log("ciao")
+
   return {
     props: {
-      recipes: res.items
+      articoli: res.items
     },
     revalidate: 10
   }
 }
 
-export default function Recipes({recipes}) {
+export default function Recipes({articoli}) {
+  console.log(articoli)
   return (
     <div className="recipe-list">
-      <Link href="/blog">go to blog</Link>
-      {recipes.map((recipe)=>{
+      <Link href="/">back home</Link>
+      {articoli.map((articolo)=>{
         return(
-          <RecipeCard key={recipe.sys.id} recipe={recipe}/>
+          <ArticoloCard key={articolo.sys.id} articolo={articolo}/>
         )
       })}
 
