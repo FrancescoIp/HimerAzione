@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { createClient } from 'contentful'
-import RecipeCard from '../components/RecipeCard'
 
 export async function getStaticProps() {
 
@@ -23,13 +22,6 @@ export async function getStaticProps() {
 export default function Recipes({recipes}) {
   return (
     <div className="recipe-list">
-      <Link href="/blog">go to blog</Link>
-      {recipes.map((recipe)=>{
-        return(
-          <RecipeCard key={recipe.sys.id} recipe={recipe}/>
-        )
-      })}
-
       <style jsx>
         {`
           .recipe-list{

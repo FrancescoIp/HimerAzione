@@ -10,6 +10,8 @@ export default function Layout({ children }) {
               Himera Azione
             </h1>
             <h2>Spread The Joy</h2>
+            <Link href="/contact"> Contattaci - </Link>
+            <Link href="/blog">go to blog</Link>
           </a>
         </Link>
       </header>
@@ -19,7 +21,7 @@ export default function Layout({ children }) {
       </div>
 
       <footer>
-        <p>Copyright 2021 Fripp :)</p> <Link href="/contact"> Contattaci </Link>
+        <p>Copyright 2021 Fripp :)</p> 
       </footer>
     </div>
   )

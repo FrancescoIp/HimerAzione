@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import dayjs from 'dayjs'
 
 export default function ArticoloCard({ articolo }) {
-  const { title, slug, immagineCopertina } = articolo.fields
+  const { title, slug, immagineCopertina, publishedDate } = articolo.fields
 
   return (
     <div className="card">
@@ -19,10 +20,10 @@ export default function ArticoloCard({ articolo }) {
       <div className="content">
         <div className="info">
           <h4>{title}</h4>
-          {/* <p>Takes approx {cookingTime} mins to make</p> */}
+          <p>Pubblicato il: {dayjs(publishedDate).format("DD-MM-YYYY")}</p>
         </div>
         <div className="actions">
-          <Link href={'/recipes/' + slug}><a>clicca qui</a></Link>
+          <Link href={'/blog/' + slug}><a>clicca qui</a></Link>
         </div>
       </div>
       <style jsx>{`
