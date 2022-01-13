@@ -10,7 +10,6 @@ export async function getStaticProps() {
 
   const res = await client.getEntries({ content_type: 'articoloBlog' })
   
-  console.log("ciao")
   return {
     props: {
       recipes: res.items
@@ -19,19 +18,9 @@ export async function getStaticProps() {
   }
 }
 
-export default function Recipes({recipes}) {
+export default function Home() {
   return (
-    <div className="recipe-list">
-      <style jsx>
-        {`
-          .recipe-list{
-            text-align: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px 60px;
-          }
-        `}
-      </style>
+    <div className="homeBG">
     </div>
   )
 }

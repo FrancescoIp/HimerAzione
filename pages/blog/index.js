@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { createClient } from 'contentful'
-import RecipeCard from '../../components/RecipeCard'
 import ArticoloCard from '../../components/ArticoloCard'
 
 export async function getStaticProps() {
