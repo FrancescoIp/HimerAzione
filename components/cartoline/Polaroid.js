@@ -11,7 +11,7 @@ export default function Polaroid({ title }) {
                 <Image alt="Annunziata - Termini Imerese" width='1200px' height="800px" src="/cupolaAnnunziata.jpg" priority/>
             </div>
 
-            <h3>{h3Text}</h3>
+            <h1>{h3Text}</h1>
         </div>
     )
 

@@ -1,0 +1,26 @@
+.donation-body{
+    text-align: center;
+    height: auto;
+    width: 25vw;
+    background-color: rgb(255, 255, 255);
+    border:1vh solid plum;
+}
+
+.donation-body h2{
+    font-size: 2vw;
+}
+
+.donation-button{
+    width: 10vw;
+    height: auto;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 767px) {
+    .donation-body h2 {
+        font-size: 3vw;
+    }
+    .donation-button{
+        width: 16vw;
+    }
+}

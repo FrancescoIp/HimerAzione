@@ -1,9 +1,6 @@
-.cartoline-container{
-    position: relative;
-    min-height: 64vh;
-}
 
-.box{
+
+.box {
     width: 300px;
     height: 400px;
     background-color: red;

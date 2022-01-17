@@ -15,10 +15,10 @@
     transform: rotate(9deg);
 }
 
-.polaroid-body h3 {
+.polaroid-body h1 {
     text-align: center;
     font-family: 'Patrick Hand SC', cursive;
-    font-size: 3.5em;
+    font-size: 6vw;
     margin: 5px 0;
     text-transform: uppercase;
 }
@@ -29,3 +29,10 @@
     width: 90%
 }
 
+
+@media screen and (max-width: 767px) {
+    .polaroid-body {
+        position: relative;
+        top: 30px;
+    }
+}
