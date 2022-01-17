@@ -1,0 +1,31 @@
+.polaroid-body {
+    height: auto;
+    width: 58vw;
+    margin: 0 auto;
+    padding-top: 2em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 8px 9px 9px #919191;
+
+
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    transform: rotate(9deg);
+}
+
+.polaroid-body h3 {
+    text-align: center;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 3.5em;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+#polaroid-image-frame{
+    margin: 0 5%;
+    height: 70%;
+    width: 90%
+}
+

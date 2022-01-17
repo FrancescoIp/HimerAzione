@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Polaroid from '../components/Cartoline/polaroid'
 import { createClient } from 'contentful'
 
 export async function getStaticProps() {
@@ -9,7 +10,7 @@ export async function getStaticProps() {
   })
 
   const res = await client.getEntries({ content_type: 'articoloBlog' })
-  
+
   return {
     props: {
       recipes: res.items
@@ -21,6 +22,11 @@ export async function getStaticProps() {
 export default function Home() {
   return (
     <div className="homeBG">
+      <div className='cartoline-container'>
+        <Polaroid></Polaroid>
+
+      </div>
+      <div className='box'></div>
     </div>
   )
 }
