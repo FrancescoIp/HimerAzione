@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { createClient } from 'contentful'
 import ArticoloCard from '../../components/ArticoloCard'
 
+
 export async function getStaticProps() {
 
   const client = createClient({
@@ -11,7 +12,7 @@ export async function getStaticProps() {
   })
 
   const res = await client.getEntries({ content_type: 'blogPost' })
-  
+
 
   return {
     props: {
@@ -21,16 +22,38 @@ export async function getStaticProps() {
   }
 }
 
-export default function Recipes({articoli}) {
-  console.log(articoli)
+export default function Recipes({ articoli }) {
+
   return (
     <div className="recipe-list">
-      <Link href="/">back home</Link>
-      {articoli.map((articolo)=>{
-        return(
-          <ArticoloCard key={articolo.sys.id} articolo={articolo}/>
+      {articoli.map((articolo) => {
+        return (
+          <ArticoloCard key={articolo.sys.id} articolo={articolo} />
         )
       })}
+      {articoli.map((articolo) => {
+        return (
+          <ArticoloCard key={articolo.sys.id} articolo={articolo} />
+        )
+      })}
+      {articoli.map((articolo) => {
+        return (
+          <ArticoloCard key={articolo.sys.id} articolo={articolo} />
+        )
+      })}
+
+      {articoli.map((articolo) => {
+        return (
+          <ArticoloCard key={articolo.sys.id} articolo={articolo} />
+        )
+      })}
+
+      {articoli.map((articolo) => {
+        return (
+          <ArticoloCard key={articolo.sys.id} articolo={articolo} />
+        )
+      })}
+
 
       <style jsx>
         {`
