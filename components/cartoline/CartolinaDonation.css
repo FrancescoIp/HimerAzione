@@ -1,26 +1,57 @@
-.donation-body{
-    text-align: center;
-    height: auto;
-    width: 25vw;
-    background-color: rgb(255, 255, 255);
-    border:1vh solid plum;
+.donation-body {
+    background-image: url('/donationCard.png');
+    background-repeat: round ;
+    height: 38%;
+    width: 30vw;
+
+    position: absolute;
+    top: 55px;
+    z-index: 1;
+    padding: 2% 9% 0% 3%;
+    box-shadow: 5px 6px 9px #919191;
+
+    -webkit-transform: rotate(340deg);
+    -moz-transform: rotate(340deg);
+    -o-transform: rotate(340deg);
+    -ms-transform: rotate(340deg);
+    transform: rotate(340deg);
 }
 
-.donation-body h2{
+.donation-body h2 {
     font-size: 2vw;
 }
 
-.donation-button{
-    width: 10vw;
+.content-container  {
+
+}
+
+.donation-button {
+    margin: 10% 0;
+    width: 93%;
     height: auto;
-    border: 2px solid black;
+    border: 2px solid #F28DFD;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.donation-button a {
+
+    font-weight: 600;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+
+    
 }
 
 @media screen and (max-width: 767px) {
-    .donation-body h2 {
-        font-size: 3vw;
-    }
-    .donation-button{
+
+    .donation-button {
         width: 16vw;
+    }
+
+    .donation-button a{
+        font-size: .6em;
     }
 }

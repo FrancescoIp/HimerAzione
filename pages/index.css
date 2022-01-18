@@ -1,4 +1,6 @@
-
+.cartoline-container {
+    position: relative;
+}
 
 .box {
     width: 300px;

@@ -1,4 +1,6 @@
 .polaroid-body {
+    position: relative;
+    z-index: 2;
     height: auto;
     width: 58vw;
     margin: 0 auto;
