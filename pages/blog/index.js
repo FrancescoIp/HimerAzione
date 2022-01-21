@@ -23,7 +23,6 @@ export async function getStaticProps() {
 }
 
 export default function Recipes({ articoli }) {
-
   return (
     <div className="recipe-list">
       {articoli.map((articolo) => {

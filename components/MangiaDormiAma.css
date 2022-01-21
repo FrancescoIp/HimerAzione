@@ -1,8 +1,10 @@
 #MDA-container {
-    border: 4px solid #EFCA08;
+    border: 10px solid #fff0bc;
     margin: 10%;
     padding: 4%;
     text-align: center;
+    padding: 15px;
+    /* border-image: url('/frame-12.png') 50% ; */
 }
 
 
