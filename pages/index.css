@@ -1,9 +1,4 @@
-.cartoline-container {
-    position: relative;
-}
 
-.box {
-    width: 300px;
-    height: 400px;
-    background-color: red;
+.homeBG svg{
+    width: 100%;
 }

@@ -1,4 +1,3 @@
-import Image from "next/dist/client/image"
 
 export default function CartolinaDonation() {
 

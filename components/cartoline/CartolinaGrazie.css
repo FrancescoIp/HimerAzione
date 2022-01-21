@@ -1,0 +1,33 @@
+.thankYou-body{
+
+    background-color: #FFC093 ;
+    border: 2vh solid #FFF0BC;
+    height: 38%;
+    width: 30vw;
+
+    position: absolute;
+    top: 390px;
+    z-index: 1;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(255, 244, 244, 0.3);
+
+    display: inline-flex;
+    justify-content: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+
+@media screen and (max-width: 767px) {
+    .thankYou-body{
+        border: .5vh solid #FFF0BC;
+        height: 10%;
+        top: 97vw;
+    }
+
+}
