@@ -1,41 +1,56 @@
 footer {
+    overflow: auto;
     background: #5EB1B6;
     color: #bbb;
-    text-align: center;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
 
 
 .footer_cartolina-donazioni-body {
+    font-family: 'Patrick Hand SC', cursive;
+    text-transform: uppercase;
+
+    position: relative;
+    top: -160px;
     background-image: url('/donationCard.png');
     background-repeat: round;
     height: 360px;
     width: 100%;
     margin: 0 auto;
-
-
-    font-family: 'Patrick Hand SC', cursive;
-    text-transform: uppercase;
-
     z-index: 1;
+
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 
-    /* -webkit-transform: rotate(340deg);
+    -webkit-transform: rotate(340deg);
     -moz-transform: rotate(340deg);
     -o-transform: rotate(340deg);
     -ms-transform: rotate(340deg);
-    transform: rotate(340deg); */
+    transform: rotate(340deg);
 }
 
-.social-box{
+.contact-container {
     position: relative;
-    top: -180px;
-    width: 50%;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
 
+.social-box {
+    position: relative;
+    top: -288px;
+    left: 6px;
+    width: 98%;
+}
 
+.social-box a {
+    text-decoration: none;
+    color: #5EB1B6;
+    font-size: 1.5em;
+}

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import CartolinaDonation from './cartoline/CartolinaDonation'
-import {FaFacebookSquare, FaMailBulk, FaInstagram} from 'react-icons/fa'
+import { FaFacebookSquare, FaMailBulk, FaInstagram } from 'react-icons/fa'
 
 
 export default function Footer() {
@@ -17,22 +17,27 @@ export default function Footer() {
                 <path d="M0 508L12.3 506.3C24.7 504.7 49.3 501.3 74 497.7C98.7 494 123.3 490 148 490.3C172.7 490.7 197.3 495.3 221.8 494.8C246.3 494.3 270.7 488.7 295.2 489.8C319.7 491 344.3 499 369 499C393.7 499 418.3 491 443 487.8C467.7 484.7 492.3 486.3 517 488.8C541.7 491.3 566.3 494.7 591 499.2C615.7 503.7 640.3 509.3 664.8 508.7C689.3 508 713.7 501 738.2 500.8C762.7 500.7 787.3 507.3 812 508.8C836.7 510.3 861.3 506.7 886 505.7C910.7 504.7 935.3 506.3 947.7 507.2L960 508L960 541L947.7 541C935.3 541 910.7 541 886 541C861.3 541 836.7 541 812 541C787.3 541 762.7 541 738.2 541C713.7 541 689.3 541 664.8 541C640.3 541 615.7 541 591 541C566.3 541 541.7 541 517 541C492.3 541 467.7 541 443 541C418.3 541 393.7 541 369 541C344.3 541 319.7 541 295.2 541C270.7 541 246.3 541 221.8 541C197.3 541 172.7 541 148 541C123.3 541 98.7 541 74 541C49.3 541 24.7 541 12.3 541L0 541Z" fill="#5eb1b6"></path>
             </svg>
             <div>
-                <div className='relative-box'>
+                <div className='contact-container'>
                     <Image src='/postcard3.png' width={480} height={360} alt='postcardInfo' />
 
-                      <ul className='social-box'>
-                          <li> <a><FaFacebookSquare/>Facebook</a></li>
-                          <li><a><FaInstagram/>Instagram</a></li>
-                          <li> <a><FaMailBulk/>himerazione@gmail.com</a></li>
-                      </ul>
+                    <ul className='social-box'>
+                        <li> <a href='https://www.facebook.com/search/top?q=himerazione'><FaFacebookSquare /> Facebook</a></li>
+                        <li> <a href='https://www.instagram.com/himerazione/'><FaInstagram /> Instagram</a></li>
+                        <li> <a href='/contatti'><FaMailBulk /> himerazione@gmail.com</a></li>
+                    </ul>
 
                 </div>
 
 
                 <div className='footer_cartolina-donazioni-body'>
-                    <p>
-                        lorem ipsum
-                    </p>
+                    <span className='footer_donazione-card-text'>
+                        <p>Dona i tuoi soldini per salvare un pezzo di Termini</p>
+                        <button>
+                            <a href='https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/'>
+                                Dona qui
+                            </a>
+                        </button>
+                    </span>
                 </div>
             </div>
         </footer>
