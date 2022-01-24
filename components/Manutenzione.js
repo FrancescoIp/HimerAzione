@@ -8,8 +8,7 @@ export default function Manutenzione() {
             <p>Presto ritorneremo a raccontarvi le meraviglie di Termini Imerese, per restare in contatto troverete i nostri social qui in basso :D</p>
             <a href='https://www.facebook.com/search/top?q=himerazione'>Facebook</a>
             <a href='https://www.instagram.com/himerazione/'>Instagram</a>
-            <a href='https://https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/'>Riattiviamo stu Jardinu</a>
-            
+            <a href='https://https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/'>Jardinu</a>
             <ContactForm/>
         </div>
     )

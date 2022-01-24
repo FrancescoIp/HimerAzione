@@ -77,6 +77,17 @@ header Link {
   font-size: 1.3em;
 }
 
+@media screen and (max-width: 767px) {
+  .manutenzione-body svg {
+    display: block;
+    margin: 0 41%;
+  }
+  .contact-box{
+    background-color: red 
+  }
+}
+
+/* --------------- sezione manutenzione -------------- */
 
 
 /* Extra small devices (phones, up to 480px) */
