@@ -11,9 +11,10 @@ footer p{
 
 .footer_cartolina-donazioni-body {
     background-image: url('/donationCard.png');
-    background-repeat: round;
+    background-repeat: no-repeat;
     height: 360px;
-    width: 485px;
+    width: 100%;
+    margin: 0 auto;
 
 
     font-family: 'Patrick Hand SC', cursive;
@@ -30,27 +31,5 @@ footer p{
     -ms-transform: rotate(340deg);
     transform: rotate(340deg); */
 }
-.donation-body h2 {
-    font-size: 1.4vw;
-}
 
-.donation-button {
-    margin: 10% 0;
-    width: 92%;
-    height: auto;
-    border: 2px solid #F28DFD;
-    border-radius: 30px;
-    background-color: white;
-    display: inline-flex;
-    justify-content: center; /* center the content horizontally */
-    align-items: center; /* center the content vertically */
-}
-
-.donation-button a {
-    font-weight: 600;
-    font-size: 2.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-}
 

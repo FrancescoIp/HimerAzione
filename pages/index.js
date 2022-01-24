@@ -6,6 +6,7 @@ import CartolinaGrazie from '../components/cartoline/CartolinaGrazie'
 import JardinuPrev from '../components/JardinuPrev'
 import MDA from '../components/MangiaDormiAma'
 import BlogPrev from '../components/BlogPrev'
+import Manutenzione from '../components/Manutenzione'
 import { createClient } from 'contentful'
 
 export async function getStaticProps() {
@@ -29,24 +30,25 @@ export async function getStaticProps() {
 
 export default function Home({ articoli }) {
   return (
-    <div className="homeBG">
-      <div className='cartoline-container'>
-        <Polaroid />
-        <CartolinaDonation passedClassName='donation-body' />
-        <CartolinaGrazie />
-      </div>
+    <Manutenzione/>
+    // <div className="homeBG">
+    //   <div className='cartoline-container'>
+    //     <Polaroid />
+    //     <CartolinaDonation/>
+    //     <CartolinaGrazie />
+    //   </div>
 
-      <JardinuPrev />
+    //   <JardinuPrev />
 
-      <MDA />
+    //   <MDA />
 
-      <BlogPrev articoli={articoli}/>
+    //   <BlogPrev articoli={articoli}/>
 
-      <style jsx>{`
-        .cartoline-container {
-          min-height: 55vh;
-        }
-      `}</style>
-    </div>
+    //   <style jsx>{`
+    //     .cartoline-container {
+    //       min-height: 55vh;
+    //     }
+    //   `}</style>
+    // </div>
   )
 }
