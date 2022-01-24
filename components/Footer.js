@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import CartolinaDonation from './cartoline/CartolinaDonation'
+import {FaFacebookSquare, FaMailBulk, FaInstagram} from 'react-icons/fa'
+
 
 export default function Footer() {
 
@@ -17,9 +19,13 @@ export default function Footer() {
             <div>
                 <div className='relative-box'>
                     <Image src='/postcard3.png' width={480} height={360} alt='postcardInfo' />
-                    <span className='social-box'>
-                
-                    </span>
+
+                      <ul className='social-box'>
+                          <li> <a><FaFacebookSquare/>Facebook</a></li>
+                          <li><a><FaInstagram/>Instagram</a></li>
+                          <li> <a><FaMailBulk/>himerazione@gmail.com</a></li>
+                      </ul>
+
                 </div>
 
 

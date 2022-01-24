@@ -32,9 +32,10 @@ footer p{
     transform: rotate(340deg); */
 }
 
-.textBtn-container{
+.social-box{
     position: relative;
-    top: -100px;
+    top: -180px;
+    width: 50%;
 }
 
 
