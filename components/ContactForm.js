@@ -6,7 +6,7 @@ export default function ContactForm() {
         <>
 
             <div className="contact-box">
-                <form action="https://formsubmit.co/ipp.francesco@gmail.com" method="POST">
+                <form action="https://formsubmit.co/himerazione@gmail.com" method="POST">
                     <input type="hidden" name="_subject" value="New submission!"></input>
                     <div>
                         <input className="field" type="text" name="name" required placeholder="Name"/>
