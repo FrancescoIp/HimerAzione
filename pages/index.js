@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/dist/client/image'
-import Polaroid from '../components/Cartoline/Polaroid'
+import Polaroid from '../components/cartoline/Polaroid'
 import CartolinaDonation from '../components/cartoline/CartolinaDonation'
 import CartolinaGrazie from '../components/cartoline/CartolinaGrazie'
 import JardinuPrev from '../components/JardinuPrev'
