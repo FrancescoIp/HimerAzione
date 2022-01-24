@@ -13,7 +13,7 @@ export default function ContactForm() {
                     <div>
                         <textarea className="field" name="testo" placeholder="Cosa vuoi chiedere? / Ask something :D" rows="4" cols="40" required></textarea>
                     </div>
-                    <button className="CbuttonA" type="submit">Send</button>
+                    <button className="CbuttonA variant-mantenience" type="submit">Send</button>
                 </form>
             </div >
     )

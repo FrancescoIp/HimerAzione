@@ -77,11 +77,26 @@ header Link {
   font-size: 1.3em;
 }
 
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 767px) {
+
   .manutenzione-body svg {
     display: block;
     margin: 0 41%;
   }
+
+  .link-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  
 }
 
 /* --------------- sezione manutenzione -------------- */
