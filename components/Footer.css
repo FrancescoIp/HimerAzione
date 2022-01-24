@@ -11,7 +11,7 @@ footer p{
 
 .footer_cartolina-donazioni-body {
     background-image: url('/donationCard.png');
-    background-repeat: no-repeat;
+    background-repeat: round;
     height: 360px;
     width: 100%;
     margin: 0 auto;
@@ -30,6 +30,11 @@ footer p{
     -o-transform: rotate(340deg);
     -ms-transform: rotate(340deg);
     transform: rotate(340deg); */
+}
+
+.textBtn-container{
+    position: relative;
+    top: -100px;
 }
 
 

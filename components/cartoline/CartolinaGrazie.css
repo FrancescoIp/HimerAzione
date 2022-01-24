@@ -6,7 +6,6 @@
     width: 30vw;
 
     position: absolute;
-    top: 390px;
     z-index: 1;
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -27,7 +26,7 @@
     .thankYou-body{
         border: .5vh solid #FFF0BC;
         height: 10%;
-        top: 79vw;
+        top: 44vh;
     }
 
 }
