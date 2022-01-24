@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import CartolinaDonation from './cartoline/CartolinaDonation'
+import CartolinaGrazie from './cartoline/CartolinaGrazie'
 import { FaFacebookSquare, FaMailBulk, FaInstagram } from 'react-icons/fa'
 
 
@@ -30,15 +30,16 @@ export default function Footer() {
 
 
                 <div className='footer_cartolina-donazioni-body'>
-                    <span className='footer_donazione-card-text'>
+                    <div className='footer_donazione-card-text'>
                         <p>Dona i tuoi soldini per salvare un pezzo di Termini</p>
                         <button>
                             <a href='https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/'>
                                 Dona qui
                             </a>
                         </button>
-                    </span>
+                    </div>
                 </div>
+                <CartolinaGrazie/>
             </div>
         </footer>
     )
