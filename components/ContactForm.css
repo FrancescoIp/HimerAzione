@@ -6,8 +6,9 @@
 }
 
 .field{
+    width: 87vw;
     border-radius: 10px;
-    margin: 4px;
+    margin: 4px 0;
     border: 3px solid #2b4d4e;
 }
 
