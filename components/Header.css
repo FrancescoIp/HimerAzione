@@ -1,0 +1,14 @@
+.nav-links a {
+    margin: 0 3px;
+}
+
+/* .nav-links a:hover {
+    color: black;
+    border-bottom: 1px solid #FAE92B;
+} */
+
+@media screen and (max-width: 767px) {
+    #logo {
+        padding-left: 15%;
+    }
+}

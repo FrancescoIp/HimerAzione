@@ -24,9 +24,10 @@
 @media screen and (max-width: 767px) {
     .thankYou-body{
         border: .5vh solid #FFF0BC;
-        height: 15vh;
-        width: 36vw;
-        top: 11vh;
+        font-size: 1.2em;
+        height: 110px;
+        width: 174px;
+        top: 5vh;
     }
 
 }

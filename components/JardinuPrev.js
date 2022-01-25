@@ -4,7 +4,7 @@ import ButtonB from "./buttons/customButtonB"
 export default function JardinuPrev() {
 
     return (
-        <div className='jardinu-prev-body'>
+        <div id="progetti" className='jardinu-prev-body'>
             <div>
                 <h3>Attiviamo stu jardinu</h3>
                 <p>

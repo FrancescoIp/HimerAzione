@@ -9,17 +9,25 @@
 @import '../components/MangiaDormiAma.css';
 @import '../components/ContactForm.css';
 @import '../components/JardinuPrev.css';
+@import '../components/Header.css';
 @import '../components/Footer.css';
 @import '../pages/index.css';
 
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Roboto';
   font-size: 1.5em;
 }
 
 .layout {
+  background-color: #BBDEF0;
   min-height: 100vh;
+}
+
+.page-content {
+  margin-top: 97px;
+  background-color: #BBDEF0;
 }
 
 header {
@@ -48,11 +56,7 @@ header Link {
   display: inline;
 }
 
-.page-content {
-  width: 100%;
-  height: 100%;
-  background-color: #BBDEF0;
-}
+
 
 
 /* --------------- sezione manutenzione -------------- */

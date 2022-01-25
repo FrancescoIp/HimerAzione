@@ -7,9 +7,13 @@ export default function Polaroid({ title }) {
 
 
     return (
-        <motion.div drag className='polaroid-body'>
+        <motion.div
+            drag
+            dragConstraints={{ top: 40, right: 40, bottom: 40, left: 40 }}
+            className='polaroid-body'
+        >
             <div id="polaroid-image-frame">
-                <Image alt="Annunziata - Termini Imerese" width='1200px' height="800px" src="/cupolaAnnunziata.jpg" priority/>
+                <Image alt="Annunziata - Termini Imerese" width='1200px' height="800px" src="/cupolaAnnunziata.jpg" priority />
             </div>
 
             <h1>{h3Text}</h1>
