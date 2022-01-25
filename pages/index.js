@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/dist/client/image'
-import Polaroid from '../components/cartoline/Polaroid'
-import CartolinaDonation from '../components/cartoline/CartolinaDonation'
-import CartolinaGrazie from '../components/cartoline/CartolinaGrazie'
+// import Polaroid from '../components/cartoline/Polaroid'
+// import CartolinaDonation from '../components/cartoline/CartolinaDonation'
+// import CartolinaGrazie from '../components/cartoline/CartolinaGrazie'
+import CartolineHome from '../components/cartoline/Cartoline'
 import JardinuPrev from '../components/JardinuPrev'
 import MDA from '../components/MangiaDormiAma'
 import BlogPrev from '../components/BlogPrev'
@@ -32,11 +33,9 @@ export default function Home({ articoli }) {
   return (
     // <Manutenzione/>
     <div className="homeBG">
-      <div className='cartoline-container'>
-        <Polaroid />
-        <CartolinaDonation/>
-        <CartolinaGrazie />
-      </div>
+
+      <CartolineHome/>
+
 
       <JardinuPrev />
 
@@ -44,11 +43,7 @@ export default function Home({ articoli }) {
 
       <BlogPrev articoli={articoli}/>
 
-      <style jsx>{`
-        .cartoline-container {
-          min-height: 55vh;
-        }
-      `}</style>
+
     </div>
   )
 }

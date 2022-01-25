@@ -1,4 +1,5 @@
 import Image from "next/dist/client/image"
+import { motion } from "framer-motion";
 
 export default function Polaroid({ title }) {
 
@@ -6,13 +7,13 @@ export default function Polaroid({ title }) {
 
 
     return (
-        <div className='polaroid-body'>
+        <motion.div drag className='polaroid-body'>
             <div id="polaroid-image-frame">
                 <Image alt="Annunziata - Termini Imerese" width='1200px' height="800px" src="/cupolaAnnunziata.jpg" priority/>
             </div>
 
             <h1>{h3Text}</h1>
-        </div>
+        </motion.div>
     )
 
 }

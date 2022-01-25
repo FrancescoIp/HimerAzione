@@ -2,10 +2,9 @@
 
     background-color: #FFC093 ;
     border: 2vh solid #FFF0BC;
-    height: 38%;
-    width: 30vw;
 
-    position: absolute;
+
+    position: relative;
     z-index: 1;
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -25,8 +24,9 @@
 @media screen and (max-width: 767px) {
     .thankYou-body{
         border: .5vh solid #FFF0BC;
-        height: 10%;
-        top: 44vh;
+        height: 15vh;
+        width: 36vw;
+        top: 11vh;
     }
 
 }

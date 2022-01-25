@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
+
 
 export default function CartolinaDonation() {
 
     return (
-        <div className='donation-body'>
+        <motion.div drag className='donation-body'>
             <div className="content-container">
                 <h2>Donate tutti i vostri soldini per una causa magnifica :D</h2>
                 <button className="donation-button">
@@ -11,6 +13,6 @@ export default function CartolinaDonation() {
                     </a>
                 </button>
             </div>
-        </div>
+        </motion.div>
     )
 }
