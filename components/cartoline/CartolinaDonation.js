@@ -6,7 +6,7 @@ export default function CartolinaDonation() {
     return (
         <motion.div
             drag
-            dragConstraints={{ top: 10, right: 10, bottom: 10, left: 10 }}
+            dragConstraints={{ top: 50, right: 50, bottom: 50, left: 50 }}
             className='donation-body'
         >
             <div className="content-container">

@@ -9,7 +9,7 @@ export default function Polaroid({ title }) {
     return (
         <motion.div
             drag
-            dragConstraints={{ top: 40, right: 40, bottom: 40, left: 40 }}
+            dragConstraints={{ top: 80, right: 80, bottom: 80, left: 80 }}
             className='polaroid-body'
         >
             <div id="polaroid-image-frame">

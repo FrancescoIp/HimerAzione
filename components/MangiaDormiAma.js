@@ -1,6 +1,6 @@
 import { BiBed, BiBeenHere, BiRestaurant } from "react-icons/bi";
 import { BsCircleFill } from 'react-icons/bs'
-import { Row, Col, Container } from 'react-bootstrap'
+import { Row, Col} from 'react-bootstrap'
 import ButtonA from "./buttons/customButtonA";
 
 function WichIcon({ icon }) {

@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import dayjs from 'dayjs'
-import { Col, Row, Card } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 export default function ArticoloCard({ articolo }) {
-  const { title, slug, immagineCopertina, publishedDate } = articolo.fields
+  const { title, slug, immagineCopertina, publishedDate, tags, autore } = articolo.fields
 
   return (
     <Col className='card-container'>
@@ -26,7 +26,9 @@ export default function ArticoloCard({ articolo }) {
             <Col className='text-container' >
               <p>Pubblicato il: {dayjs(publishedDate).format("DD-MM-YYYY")}</p>
               <h4>{title}</h4>
-              <p>Autore</p>
+              {/* the second p is positioned at the bottom of the blog-card */}
+              <p>{autore ? 'Autore: ' + autore : 'Autore'}</p>
+              <p>{'tags: ' + tags}</p>
             </Col>
           </Row>
         </a>

@@ -1,0 +1,25 @@
+
+.blog-container{
+    padding: 2% 8% 0 8%;
+}
+.blog-container h1{
+    color: #FFF;
+    font-size: 7em
+}
+.input-spread{
+    width: 100%;
+    border: 3px solid #5EB1B6;
+    border-radius: 15px;
+}
+.triangle {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    border-top: 10px solid transparent;
+    display: inline-block;
+}
+.filter-border-bottom{
+    padding: 5px 0 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 3px solid whitesmoke;
+}
