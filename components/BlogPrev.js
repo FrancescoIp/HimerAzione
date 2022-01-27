@@ -10,11 +10,9 @@ export default function BlogPrev({ articoli }) {
         <div className='BlogPrev-container'>
             <Link id="BlogPrev-title" href='/blog'><a><h4>Raccontiamo Termini</h4></a></Link>
             <Row xs={1} md={2} className='justify-content-center mx-6 g-0'>
-                {articoli.map((articolo) => {
+                {articoli.slice(0,2).map((articolo,idx) => {
                     return (
-
                         <ArticoloCard key={articolo.sys.id} articolo={articolo} />
-
                     )
                 })}
             </Row>

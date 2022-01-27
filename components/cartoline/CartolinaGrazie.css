@@ -1,5 +1,6 @@
 .thankYou-body{
-
+    height: 220px;
+    width: 348px;
     background-color: #FFC093 ;
     border: 2vh solid #FFF0BC;
 
@@ -19,6 +20,11 @@
     -o-transform: rotate(-7deg);
     -ms-transform: rotate(-7deg);
     transform: rotate(-7deg);
+}
+
+.btn-thxCard-home:hover{
+    box-shadow: none;
+    background-color: #ffea9d;
 }
 
 @media screen and (max-width: 767px) {

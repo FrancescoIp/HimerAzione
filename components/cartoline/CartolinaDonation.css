@@ -3,6 +3,7 @@
     background-repeat: round ;
     height: 38%;
     width: 30vw;
+   
 
     position: absolute;
     top: 110px;
@@ -21,13 +22,17 @@
     transform: rotate(340deg);
 }
 
+.content-container{
+    padding: 10%;
+}
+
 .donation-body h2 {
+    padding: 0 26% 0 0;
     font-size: 1.4vw;
 }
 
 .donation-button {
-    margin: 10% 0;
-    width: 92%;
+    width: 50%;
     height: auto;
     border: 2px solid #F28DFD;
     border-radius: 30px;
@@ -71,6 +76,7 @@
     }
 
     .donation-body h2 {
+        padding: 0;
         font-size: 1em;
     }
 

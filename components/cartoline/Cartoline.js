@@ -9,7 +9,7 @@ export default function CartolineHome() {
         <div className='cartoline-container'>
             <Polaroid />
             <CartolinaDonation />
-            <CartolinaGrazie type='home' />
+            <CartolinaGrazie type='home' btnClass="btn-thxCard-home"/>
             <style jsx>{`
         .cartoline-container {
           min-height: 65vh;

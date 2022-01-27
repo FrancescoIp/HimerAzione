@@ -93,7 +93,6 @@ export default function Recipes({ articoli }) {
 
   useEffect(() => {
     const query = queryFilter
-    const posts = articoli || []
 
     const filteredData = articoli.filter(post => {
       const { title, slug, tags } = post.fields
@@ -117,23 +116,6 @@ export default function Recipes({ articoli }) {
   const posts = hasSearchResults ? filteredData : articoli
 
   return (
-    // <div className="blog-container">
-    //   <motion.h1 animate={{ y: 0 }} initial={{ y: -200 }} transition={{ stiffness: 170, type: "spring" }}>
-    //     IL BLOG
-    //   </motion.h1>
-    //   <Filters
-    //     handleValueChange={handleValueChange}
-    //     postShowing={posts.length}
-    //   />
-    //   <motion.div animate>
-    //     {articoli.map((articolo) => {
-    //       return (
-    //         <ArticoloCard key={articolo.sys.id} articolo={articolo} />
-    //       )
-    //     })}
-    //   </motion.div>
-
-    // </div>
     <Row className="blog-container">
       <Col xs={12} md={4}>
         <motion.h1 animate={{ y: 0 }} initial={{ y: -200 }} transition={{ stiffness: 170, type: "spring" }}>
@@ -146,7 +128,7 @@ export default function Recipes({ articoli }) {
       </Col>
       <Col xs={12} md={8}>
         <motion.div animate>
-          {articoli.map((articolo) => {
+          {posts.map((articolo) => {
             return (
               <ArticoloCard key={articolo.sys.id} articolo={articolo} />
             )
