@@ -117,22 +117,42 @@ export default function Recipes({ articoli }) {
   const posts = hasSearchResults ? filteredData : articoli
 
   return (
-    <div className="blog-container">
-      <motion.h1 animate={{ y: 0 }} initial={{ y: -200 }} transition={{ stiffness: 170, type: "spring" }}>
-        IL BLOG
-      </motion.h1>
-      <Filters
-        handleValueChange={handleValueChange}
-        postShowing={posts.length}
-      />
-      <motion.div animate>
-        {articoli.map((articolo) => {
-          return (
-            <ArticoloCard key={articolo.sys.id} articolo={articolo} />
-          )
-        })}
-      </motion.div>
+    // <div className="blog-container">
+    //   <motion.h1 animate={{ y: 0 }} initial={{ y: -200 }} transition={{ stiffness: 170, type: "spring" }}>
+    //     IL BLOG
+    //   </motion.h1>
+    //   <Filters
+    //     handleValueChange={handleValueChange}
+    //     postShowing={posts.length}
+    //   />
+    //   <motion.div animate>
+    //     {articoli.map((articolo) => {
+    //       return (
+    //         <ArticoloCard key={articolo.sys.id} articolo={articolo} />
+    //       )
+    //     })}
+    //   </motion.div>
 
-    </div>
+    // </div>
+    <Row className="blog-container">
+      <Col xs={12} md={4}>
+        <motion.h1 animate={{ y: 0 }} initial={{ y: -200 }} transition={{ stiffness: 170, type: "spring" }}>
+          IL BLOG
+        </motion.h1>
+        <Filters
+          handleValueChange={handleValueChange}
+          postShowing={posts.length}
+        />
+      </Col>
+      <Col xs={12} md={8}>
+        <motion.div animate>
+          {articoli.map((articolo) => {
+            return (
+              <ArticoloCard key={articolo.sys.id} articolo={articolo} />
+            )
+          })}
+        </motion.div>
+      </Col>
+    </Row>
   )
 }
