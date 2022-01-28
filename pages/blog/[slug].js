@@ -49,39 +49,41 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export default function ArticoloDettagli({ articolo }) {
-  
-  if(!articolo) return <Skeleton />
 
-  const {title, tags, body, immagineCopertina} = articolo.fields
+  if (!articolo) return <Skeleton />
+
+  const { title, tags, body, immagineCopertina } = articolo.fields
 
   const options = {
     renderNode: {
       "embedded-asset-block": (node) => {
-          console.log(node)
-         const alt = node.data.target.fields.title
-         const url = node.data.target.fields.file.url
-         return <Image alt={alt} src={"https:" + url} width={300} height={230} />
+        console.log(node)
+        const alt = node.data.target.fields.title
+        const url = node.data.target.fields.file.url
+        return <Image alt={alt} src={"https:" + url} width={300} height={230} />
       }
     }
- }
+  }
 
   return (
-    <div>
+    <div className='pagina-articolo'>
       <div className="banner">
         <Image
           src={'https:' + immagineCopertina.fields.file.url}
-          // width={thumbnail.fields.file.details.image.width}
-          // height={thumbnail.fields.file.details.image.height}
           width={1200}
           height={400}
+          id='articolo-img'
         />
         <h2>{title}</h2>
-        <div className="info">
-          <p>Tags: {tags}</p>
+        <div className='container-articolo-body'>
+          <div className="info">
+            <p>Tags: {tags}</p>
+          </div>
+          <div className="method">
+            <div>{documentToReactComponents(body, options)}</div>
+          </div>
         </div>
-        <div className="method">
-          <div>{documentToReactComponents(body,options)}</div>
-        </div>
+
       </div>
       <style jsx>{`
         h2,h3 {

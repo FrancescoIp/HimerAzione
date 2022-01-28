@@ -8,11 +8,15 @@ export default function BlogPrev({ articoli }) {
 
     return (
         <div className='BlogPrev-container'>
-            <Link id="BlogPrev-title" href='/blog'><a><h4>Raccontiamo Termini</h4></a></Link>
-            <Row xs={1} md={2} className='justify-content-center mx-6 g-0'>
-                {articoli.slice(0,2).map((articolo,idx) => {
+            <Link id="BlogPrev-title" href='/blog'>
+                <a>
+                    <h4>Raccontiamo Termini</h4>
+                </a>
+            </Link>
+            <Row className='justify-content-between g-0'>
+                {articoli.slice(0, 4).map((articolo) => {
                     return (
-                        <ArticoloCard key={articolo.sys.id} articolo={articolo} />
+                        <ArticoloCard key={articolo.sys.id} articolo={articolo} type='home'/>
                     )
                 })}
             </Row>

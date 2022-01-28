@@ -23,3 +23,31 @@
     margin-bottom: 10px;
     border-bottom: 3px solid whitesmoke;
 }
+
+#colonna-articoli{
+    padding-left: 60px;
+}
+
+@media screen and (max-width: 767px) {
+    #colonna-articoli{
+        padding-left: 0;
+    }
+}
+
+/* ------------------ pagina articolo ---------------- */
+
+.pagina-articolo{
+    border: 4px solid white;
+    background-color: #E2E2E2;
+    border-radius: 20px;
+    margin: 0 20%;
+}
+
+#articolo-img{
+    object-fit: cover;
+    border-radius: 10px 10px 0 10px;
+}
+
+.container-articolo-body{
+    padding: 5%;
+}

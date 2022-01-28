@@ -4,11 +4,12 @@ import Image from 'next/image'
 import dayjs from 'dayjs'
 import { Col, Row } from 'react-bootstrap'
 
-export default function ArticoloCard({ articolo }) {
+export default function ArticoloCard({ articolo, type }) {
   const { title, slug, immagineCopertina, publishedDate, tags, autore } = articolo.fields
+  const columnDimension  = type == 'home' ? 5 : 8
 
   return (
-    <Col className='card-container'>
+    <Col xs={12} md={columnDimension} className='card-container mb-5'>
       <Link href={'/blog/' + slug}>
         <a>
           <Row>

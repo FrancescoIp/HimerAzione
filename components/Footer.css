@@ -68,6 +68,8 @@ footer p {
 
 .contact-container {
     position: relative;
+    top: -80px;
+    left: 60px;
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
     -o-transform: rotate(10deg);
@@ -75,11 +77,13 @@ footer p {
     transform: rotate(10deg);
 }
 
+
 .social-box {
     position: relative;
     top: -265px;
     left: 6px;
     width: 98%;
+    list-style-type: none;
 }
 
 .social-box a {
@@ -89,10 +93,13 @@ footer p {
 }
 
 .thankYou-body_footer{
-
+    height: 280px;
+    width: 470px;
     background-color: #FFC093 ;
     border: 2vh solid #FFF0BC;
     position: relative;
+    top: -100px;
+    left: 20px;
     z-index: 2;
 
     /* shadows */

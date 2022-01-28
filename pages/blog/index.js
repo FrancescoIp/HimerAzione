@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap'
 import { BsFillTriangleFill } from 'react-icons/bs'
-import Link from 'next/link'
-import Image from 'next/image'
 import { createClient } from 'contentful'
 import { motion, AnimatePresence } from "framer-motion";
 import ArticoloCard from '../../components/ArticoloCard'
@@ -126,14 +124,12 @@ export default function Recipes({ articoli }) {
           postShowing={posts.length}
         />
       </Col>
-      <Col xs={12} md={8}>
-        <motion.div animate>
+      <Col xs={12} md={8} id='colonna-articoli'>
           {posts.map((articolo) => {
             return (
               <ArticoloCard key={articolo.sys.id} articolo={articolo} />
             )
           })}
-        </motion.div>
       </Col>
     </Row>
   )

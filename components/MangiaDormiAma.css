@@ -1,45 +1,39 @@
 #MDA-container {
     border: 10px solid #fff0bc;
     margin: 10%;
-    padding: 4%;
+    padding: 2%;
     text-align: center;
-    padding: 15px;
-    /* border-image: url('/frame-12.png') 50% ; */
 }
 
-
-#colorA {
-    background-color: #F08700;
-}
-
-#colorB {
-    background-color: #EFCA08;
-}
 
 .MDACard-container {
-    padding: 8%;
-    margin: 6% 2%;
+    padding: 4%;
+    margin: 2%;
+
     border-radius: 50px;
-    min-height: 35vh;
+    width: 268px;
+    height: 472px;
 
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
 
-.MDACard-container p {
-    margin: 10% 3%;
-    font-size: 2.3em;
-    line-height: 25px;
-    line-height: 40px;
-    text-align: left;
+.text-btn-container {
+    margin: 10%;
 }
 
-.btn-MDACArd1{
-    width: 90%;
+.text-btn-container p {
+    font-size: 2.3em;
+    line-height: 40px;
+}
+
+.btn-MDACArd1 {
+    width: 100%;
     font-size: 28px;
 }
-.btn-MDACard1__color-shadow{
+
+.btn-MDACard1__color-shadow {
     box-shadow: 0 4px 4px rgba(239, 202, 8, 1);
 }
 
@@ -47,13 +41,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     border: 1px solid rgb(255, 255, 255);
-    width: 3em;
-    height: 3em;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
 }
 
 .circle-icon svg {
     font-size: 2em;
+}
+
+.colorA {
+    background-color: #F08700;
+}
+
+.colorB {
+    background-color: #EFCA08;
+}
+
+@media screen and (max-width: 767px) {
+    #MDA-container {
+        padding: 8%;
+    }
+
+    .MDACard-container {
+        padding: 8%;
+        margin: 6% 2%;
+    }
 }
