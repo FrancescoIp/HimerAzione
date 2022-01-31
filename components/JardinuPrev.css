@@ -13,6 +13,10 @@
     padding: 3% 5%;
 }
 
+.jardinu-prev-body p{
+    font-size: 30px;
+}
+
 .jardinu-prev-body h3{
     text-transform: uppercase;
     text-align: center;
@@ -29,6 +33,9 @@
 @media screen and (max-width: 767px){
     .jardinu-prev-body{
         width: 80%;
+    }
+    .jardinu-prev-body p{
+        font-size: 22px;
     }
     .jardinu-prev-body h3{
         font-size: 3em;

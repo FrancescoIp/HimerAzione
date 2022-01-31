@@ -23,10 +23,10 @@ export default function Footer() {
                     <motion.div
                         drag
                         dragConstraints={{ top: 10, right: 10, bottom: 10, left: 10 }}
-                        className='contact-container'
+                        className='cartolina-contatti-container'
                     >
                         <Image src='/postcard3.png' width={480} height={360} alt='postcardInfo' />
-                        <ul className='social-box'>
+                        <ul className='cartolina-contatti-box'>
                             <li> <a href='https://www.facebook.com/search/top?q=himerazione'><FaFacebookSquare /> Facebook</a></li>
                             <li> <a href='https://www.instagram.com/himerazione/'><FaInstagram /> Instagram</a></li>
                             <li> <a href='/contatti'><FaMailBulk /> himerazione@gmail.com</a></li>

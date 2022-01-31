@@ -37,10 +37,11 @@
 /* ------------------ pagina articolo ---------------- */
 
 .pagina-articolo{
-    border: 4px solid white;
+    border: 7px solid white;
     background-color: #E2E2E2;
     border-radius: 20px;
-    margin: 0 20%;
+    margin: 8% 20% 0 20%;
+    
 }
 
 #articolo-img{
@@ -49,5 +50,17 @@
 }
 
 .container-articolo-body{
-    padding: 5%;
+    padding:0 5% 5% 5%;
+}
+
+.navigation-articolo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info{
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
 }

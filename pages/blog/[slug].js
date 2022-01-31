@@ -1,6 +1,7 @@
 
 import { createClient } from 'contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Link from "next/dist/client/link"
 import Image from 'next/image'
 import Skeleton from '../../components/Skeleton'
 
@@ -57,7 +58,6 @@ export default function ArticoloDettagli({ articolo }) {
   const options = {
     renderNode: {
       "embedded-asset-block": (node) => {
-        console.log(node)
         const alt = node.data.target.fields.title
         const url = node.data.target.fields.file.url
         return <Image alt={alt} src={"https:" + url} width={300} height={230} />
@@ -82,6 +82,8 @@ export default function ArticoloDettagli({ articolo }) {
           <div className="method">
             <div>{documentToReactComponents(body, options)}</div>
           </div>
+          <span className='navigation-articolo'> <Link href={'/blog'}>Torna indietro</Link> / <Link href={'/'}>Home</Link> </span>
+            
         </div>
 
       </div>

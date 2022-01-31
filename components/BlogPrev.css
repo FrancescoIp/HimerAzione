@@ -1,9 +1,15 @@
 .BlogPrev-container{
     margin: 10% 15% 5%;
 }
+.biggerText{
+    font-size: 22px;
+}
 
 @media screen and (max-width: 767px) {
     .BlogPrev-container{
         margin: 10%;
+    }
+    .biggerText{
+        font-size: 15px;
     }
 }

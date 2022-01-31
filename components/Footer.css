@@ -21,7 +21,7 @@ footer p {
     text-transform: uppercase;
 
     position: relative;
-    top: -160px;
+    top: -75px;
     background-image: url('/donationCard.png');
     background-repeat: round;
     height: 360px;
@@ -66,10 +66,12 @@ footer p {
     color: black;
 }
 
-.contact-container {
+.cartolina-contatti-container {
     position: relative;
-    top: -80px;
-    left: 60px;
+    
+    top: -52px;
+    left: 161px;
+
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
     -o-transform: rotate(10deg);
@@ -78,7 +80,7 @@ footer p {
 }
 
 
-.social-box {
+.cartolina-contatti-box {
     position: relative;
     top: -265px;
     left: 6px;
@@ -86,7 +88,7 @@ footer p {
     list-style-type: none;
 }
 
-.social-box a {
+.cartolina-contatti-box a {
     text-decoration: none;
     color: #5EB1B6;
     font-size: 1.5em;
@@ -98,9 +100,9 @@ footer p {
     background-color: #FFC093 ;
     border: 2vh solid #FFF0BC;
     position: relative;
-    top: -100px;
-    left: 20px;
-    z-index: 2;
+    top: -51px;
+    left: -48px;
+    z-index: 0;
 
     /* shadows */
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -122,15 +124,18 @@ footer p {
 
 @media screen and (max-width: 767px) {
     .thankYou-body_footer{
-        /* border: .5vh solid #FFF0BC; */
         height: 360px;
         width: 100%;
-        top: -24vh;
+        top: -60px;
     }
     .thxCard-btn_footer {
         font-size: 4em;
         width: 84%;
         border-radius: 45px;
+    }
+    .cartolina-contatti-container {
+        top: 50px;
+        left: 20px;
     }
 
 }
