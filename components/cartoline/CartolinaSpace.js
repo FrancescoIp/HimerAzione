@@ -5,7 +5,7 @@ export default function CartolinaSPace() {
     return (
         <div className='cartolina-space-container'>
             <Row>
-                <Col xs={7}>
+                <Col xs={7} className='align-self-center'>
                     <Image
                         src='/space1.png'
                         width={608}

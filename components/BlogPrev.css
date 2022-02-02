@@ -1,15 +1,34 @@
-.BlogPrev-container{
+.BlogPrev-container {
     margin: 10% 15% 5%;
 }
-.biggerText{
+
+.biggerText {
     font-size: 22px;
 }
 
+.marquee-container h3 {
+    font-size:  30px;
+}
+
+.marquee-container #title1 {
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    right: -1065px;
+}
+.marquee-container #title2 {
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+    right: -536px;
+}
+
 @media screen and (max-width: 767px) {
-    .BlogPrev-container{
+    .BlogPrev-container {
         margin: 10%;
     }
-    .biggerText{
+
+    .biggerText {
         font-size: 15px;
     }
 }

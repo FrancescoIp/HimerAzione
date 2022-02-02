@@ -5,7 +5,7 @@ import ButtonA from "./buttons/customButtonA";
 
 export default function MDA() {
     return (
-        <Row className="justify-content-center g-0" id="MDA-container">
+        <Row className="justify-content-center" id="MDA-container">
             <Col xs={12} md={3} className="MDACard-container colorA">
                 <div className="circle-icon">
                     <BiRestaurant size={38} />

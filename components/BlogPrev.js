@@ -1,22 +1,67 @@
 import Link from 'next/link'
 import { Row } from 'react-bootstrap'
+import { motion } from "framer-motion";
 
 import ArticoloCard from './ArticoloCard'
 
 
 export default function BlogPrev({ articoli }) {
 
+    const marqVariants = {
+        animate: {
+            x: -1633,
+            opacity: 1,
+            transition: {
+                repeat: Infinity,
+                repeatDelay: 2,
+                ease: "linear",
+                duration: 5
+            },
+        }
+    }
+    const marqVariants1 = {
+        animate: {
+            x: -1675,
+            opacity: 1,
+            transition: {
+                repeat: Infinity,
+                repeatDelay: 2,
+                ease: "linear",
+                duration: 5,
+                delay: 3.2
+
+            },
+        }
+    }
+
     return (
         <div className='BlogPrev-container'>
             <Link id="BlogPrev-title" href='/blog'>
                 <a>
-                    <h4>Raccontiamo Termini</h4>
+                    <div className='marquee-container'>
+                        <motion.h3
+                            id='title1'
+                        variants={marqVariants}
+                        animate="animate"
+                        initial="initial"
+                        >
+                            Raccontiamo Termini
+                        </motion.h3>
+                        <motion.h3
+                            id='title2'
+                        variants={marqVariants1}
+                        animate="animate"
+                        initial="initial"
+                        >
+                            Raccontiamo Termini
+                        </motion.h3>
+                    </div>
                 </a>
             </Link>
             <Row className='justify-content-between g-0'>
                 {articoli.slice(0, 4).map((articolo) => {
                     return (
-                        <ArticoloCard key={articolo.sys.id} articolo={articolo} type='home'/>
+                        <ArticoloCard key={articolo.sys.id} articolo={articolo} type='home' />
                     )
                 })}
             </Row>
@@ -25,6 +70,12 @@ export default function BlogPrev({ articoli }) {
                    a {
                     text-decoration: none;
                     color: black
+                   }
+                   .marquee-container{
+                       display: flex;
+                       position: relative;
+                       width: 100%;
+                       overflow-x: hidden;
                    }
                    a:hover{
                        color: blue
