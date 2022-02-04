@@ -9,11 +9,11 @@ export default function BlogPrev({ articoli }) {
 
     const marqVariants = {
         animate: {
-            x: -1633,
+            x: -1896,
             opacity: 1,
             transition: {
                 repeat: Infinity,
-                repeatDelay: 2,
+                repeatDelay: 2.3,
                 ease: "linear",
                 duration: 5
             },
@@ -21,14 +21,14 @@ export default function BlogPrev({ articoli }) {
     }
     const marqVariants1 = {
         animate: {
-            x: -1675,
+            x: -1900,
             opacity: 1,
             transition: {
                 repeat: Infinity,
-                repeatDelay: 2,
+                repeatDelay: 2.3,
                 ease: "linear",
                 duration: 5,
-                delay: 3.2
+                delay: 3.8
 
             },
         }

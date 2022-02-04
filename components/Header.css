@@ -1,5 +1,12 @@
 .nav-links a {
-    margin: 0 3px;
+    letter-spacing: 2px;
+    margin: 0 10px;
+}
+.nav-links a:hover {
+    color: black;
+}
+.active-nav-link{
+    border-bottom: 3px solid #fff;
 }
 
 @media screen and (max-width: 767px) {

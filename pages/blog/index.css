@@ -3,6 +3,7 @@
     padding: 2% 8% 0 8%;
 }
 .blog-container h1{
+    white-space: nowrap;
     color: #FFF;
     font-size: 7em
 }

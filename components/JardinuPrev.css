@@ -31,6 +31,9 @@
 }
 
 @media screen and (max-width: 767px){
+    .jardinu-container{
+        margin-top: 25px;
+    }
     .jardinu-prev-body{
         width: 80%;
     }
