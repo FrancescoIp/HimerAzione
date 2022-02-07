@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router'
 import { Row, Col } from 'react-bootstrap'
-import { BsFillTriangleFill } from 'react-icons/bs'
 import { createClient } from 'contentful'
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import Filters from '../../components/BlogFilters';
 import ArticoloCard from '../../components/ArticoloCard'
 
 
-export async function getStaticProps() {
-
+export async function getStaticProps(context) {
+  console.log('CONteXT:',context.query)
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -24,57 +25,11 @@ export async function getStaticProps() {
   }
 }
 
-function Filters(props) {
-  const [showFilters, setShowFilters] = useState(false)
-  return (
-    <Row>
-      <Col xs={12}>
-        <input
-          className="input-spread"
-          type="text"
-          aria-label="Search"
-          placeholder="Cerca l'articolo scrivendo qui"
-          onChange={props.handleValueChange}
-        />
-      </Col>
-      <Col xs={12} className='d-flex justify-content-between filter-border-bottom'>
-        <span>Filtri</span>
-        <motion.div onClick={() => setShowFilters(!showFilters)}
-          animate={{ rotate: showFilters ? 180 : 0 }}
-        >
-          <BsFillTriangleFill size={13} />
-        </motion.div>
-      </Col>
-      <AnimatePresence>
-        {showFilters &&
-          <motion.div
-            key='filters'
-            style={{ marginBottom: "10px" }}
-            animate=
-            {{
-              opacity: showFilters ? 1 : 0,
-              y: showFilters ? 0 : -30
-            }}
-            initial={{ opacity: 0, y: -15 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: .5 }}
-
-          >
-            <button onClick={props.handleValueChange} value="">All</button>
-            <button onClick={props.handleValueChange} value="Chiese">Chiese</button>
-            <button onClick={props.handleValueChange} value="Musei">Musei</button>
-            <button onClick={props.handleValueChange} value="Cultura">Cultura</button>
-          </motion.div>
-        }
-      </AnimatePresence>
-      <Col md={2}>
-        Articoli: {props.postShowing}
-      </Col>
-    </Row>
-  )
-}
-
-export default function Recipes({ articoli }) {
+export default function Blog({articoli}) {
+  //to get the data from the Link component and use to filter the posts
+  const router = useRouter()
+  const tagCategory = router.query.data?router.query.data: ""
+  console.log('tagCategory',tagCategory)
 
   const emptyQuery = ""
   // need a better declaration of this useState
@@ -83,7 +38,7 @@ export default function Recipes({ articoli }) {
     query: emptyQuery,
   });
 
-  const [queryFilter, setQueryFilter] = useState("")
+  const [queryFilter, setQueryFilter] = useState(tagCategory)
 
   const handleValueChange = event => {
     setQueryFilter(event.target.value)
@@ -119,17 +74,18 @@ export default function Recipes({ articoli }) {
         <motion.h1 animate={{ y: 0 }} initial={{ y: -200 }} transition={{ stiffness: 170, type: "spring" }}>
           IL BLOG
         </motion.h1>
+
         <Filters
           handleValueChange={handleValueChange}
           postShowing={posts.length}
         />
       </Col>
       <Col xs={12} md={8} id='colonna-articoli'>
-          {posts.map((articolo) => {
-            return (
-              <ArticoloCard key={articolo.sys.id} articolo={articolo} />
-            )
-          })}
+        {posts.map((articolo) => {
+          return (
+            <ArticoloCard key={articolo.sys.id} articolo={articolo} />
+          )
+        })}
       </Col>
     </Row>
   )

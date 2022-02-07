@@ -7,21 +7,28 @@
 }
 
 .marquee-container h3 {
-    font-size:  30px;
+    font-size: 130px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee-container a:hover {
+   color: red;
 }
 
 .marquee-container #title1 {
-    font-size: 60px;
-    white-space: nowrap;
-    position: relative;
-    right: -1328px;
+    right: -1057px;
 }
+
 .marquee-container #title2 {
-    font-size: 60px;
-    white-space: nowrap;
-    position: relative;
-    right: -760px;
+    right: 182px;
 }
+
+.marquee-container span {
+    -webkit-text-stroke:3px black;
+    -webkit-text-fill-color:transparent;
+}
+
 
 @media screen and (max-width: 767px) {
     .BlogPrev-container {

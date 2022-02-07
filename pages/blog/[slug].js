@@ -77,7 +77,7 @@ export default function ArticoloDettagli({ articolo }) {
         <h2>{title}</h2>
         <div className='container-articolo-body'>
           <div className="info">
-            <p>Tags: {tags}</p>
+            <p>Tags: <Link href={{pathname:'/blog', query: {data: tags}}}>{tags}</Link> </p>
           </div>
           <div className="method">
             <div>{documentToReactComponents(body, options)}</div>

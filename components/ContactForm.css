@@ -1,14 +1,23 @@
 .contact-box {
-    width: fit-content;
+    text-align: center;
     border: 3px solid #5EB1B6;
-    margin: 30px auto;
-    padding: 5px;
+    margin: 0 10%;
+    padding: 2em;
     border-radius: 24px;
+    position: relative;
+    top: 60px;
 }
 
 .field{
-    width: 87vw;
+    display: block;
+    width: 100%;
     border-radius: 10px;
     margin: 4px 0;
     border: 3px solid #2b4d4e;
+}
+
+.contact-box-btn{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
 }

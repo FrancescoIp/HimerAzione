@@ -1,5 +1,4 @@
 
-import Image from 'next/dist/client/image'
 import CartolineHome from '../components/cartoline/Cartoline'
 import JardinuPrev from '../components/JardinuPrev'
 import MDA from '../components/MangiaDormiAma'

@@ -25,6 +25,17 @@
     border-bottom: 3px solid whitesmoke;
 }
 
+.blog-filter-container{
+    border-bottom: 3px solid whitesmoke;
+
+}
+
+.blog-filter-container button {
+    border: none;
+    margin-right: 3px;
+    background: none;
+}
+
 #colonna-articoli{
     padding-left: 60px;
 }
@@ -64,4 +75,8 @@
 }
 
 @media screen and (max-width: 767px) {
+    .pagina-articolo{
+        margin: 8% 10% 0 10%;
+        
+    }
 }

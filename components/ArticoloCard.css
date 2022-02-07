@@ -27,12 +27,11 @@
     margin-top: 12px;
 }
 
-p:nth-of-type(2){
+.text-container p:nth-of-type(2){
   position: absolute;
   bottom: 0;
   margin-bottom: 2px;
   font-size: .9em;
-
 }
 
 @media screen and (max-width: 767px) {

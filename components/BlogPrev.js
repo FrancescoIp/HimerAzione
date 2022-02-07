@@ -9,26 +9,26 @@ export default function BlogPrev({ articoli }) {
 
     const marqVariants = {
         animate: {
-            x: -1896,
+            x: -2287,
             opacity: 1,
             transition: {
                 repeat: Infinity,
-                repeatDelay: 2.3,
+                repeatDelay: 1.8,
                 ease: "linear",
-                duration: 5
+                duration: 6
             },
         }
     }
     const marqVariants1 = {
         animate: {
-            x: -1900,
+            x: -2285,
             opacity: 1,
             transition: {
                 repeat: Infinity,
-                repeatDelay: 2.3,
+                repeatDelay: 1.8,
                 ease: "linear",
-                duration: 5,
-                delay: 3.8
+                duration: 6,
+                delay: 4
 
             },
         }
@@ -45,7 +45,7 @@ export default function BlogPrev({ articoli }) {
                         animate="animate"
                         initial="initial"
                         >
-                            Raccontiamo Termini
+                            <span>Raccontiamo</span> Termini
                         </motion.h3>
                         <motion.h3
                             id='title2'
@@ -53,7 +53,7 @@ export default function BlogPrev({ articoli }) {
                         animate="animate"
                         initial="initial"
                         >
-                            Raccontiamo Termini
+                            <span>Raccontiamo</span> Termini
                         </motion.h3>
                     </div>
                 </a>
@@ -78,7 +78,7 @@ export default function BlogPrev({ articoli }) {
                        overflow-x: hidden;
                    }
                    a:hover{
-                       color: blue
+                       color: #fff
                    }
                    h4{
                     margin-bottom: 30px;
