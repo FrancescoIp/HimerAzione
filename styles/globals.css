@@ -8,9 +8,11 @@
 @import '../components/ArticoloCard.css';
 @import '../pages/blog/index.css';
 @import '../components/BlogPrev.css';
+@import '../components/BlogFilters.css';
 @import '../components/MangiaDormiAma.css';
 @import '../components/ContactForm.css';
 @import '../components/JardinuPrev.css';
+@import '../pages/chisiamo.css';
 @import '../components/Header.css';
 @import '../components/Footer.css';
 @import '../pages/index.css';

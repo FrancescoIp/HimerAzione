@@ -1,0 +1,9 @@
+.blog-tags {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-tags span {
+    display: flex;
+    align-items: center;
+}

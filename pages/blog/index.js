@@ -7,16 +7,12 @@ import Filters from '../../components/BlogFilters';
 import ArticoloCard from '../../components/ArticoloCard'
 
 
-export async function getStaticProps(context) {
-  console.log('CONteXT:',context.query)
+export async function getStaticProps() {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   })
-
   const res = await client.getEntries({ content_type: 'blogPost' })
-
-
   return {
     props: {
       articoli: res.items
@@ -25,29 +21,35 @@ export async function getStaticProps(context) {
   }
 }
 
-export default function Blog({articoli}) {
+export default function Blog(props) {
   //to get the data from the Link component and use to filter the posts
   const router = useRouter()
-  const tagCategory = router.query.data?router.query.data: ""
-  console.log('tagCategory',tagCategory)
+  // const tagCategory = !router.query.data ?:
+  console.log(router.query.data)
+  
+
+  const tagsArray = props.articoli.map((articolo)=>(articolo.fields.tags))
 
   const emptyQuery = ""
   // need a better declaration of this useState
   const [state, setState] = useState({
     filteredData: [],
-    query: emptyQuery,
+    ricerca: emptyQuery,
   });
 
-  const [queryFilter, setQueryFilter] = useState(tagCategory)
+  const [queryFilter, setQueryFilter] = useState("")
+
+  const [radioValue, setRadioValue] = useState('Tutti');
 
   const handleValueChange = event => {
-    setQueryFilter(event.target.value)
+    setQueryFilter(event.target.value);
+    setRadioValue(event.target.value)
   };
 
   useEffect(() => {
     const query = queryFilter
 
-    const filteredData = articoli.filter(post => {
+    const filteredData = props.articoli.filter(post => {
       const { title, slug, tags } = post.fields
       return (
         // standardize data with .toLowerCase()
@@ -56,17 +58,17 @@ export default function Blog({articoli}) {
         tags.toLowerCase().includes(query.toLowerCase())
       )
     })
-
     setState({
       query,
       filteredData,
     })
 
-  }, [queryFilter, articoli]);
+
+  }, [queryFilter, props.articoli]);
 
   const { filteredData, query } = state
   const hasSearchResults = filteredData && query !== emptyQuery
-  const posts = hasSearchResults ? filteredData : articoli
+  const posts = hasSearchResults ? filteredData : props.articoli
 
   return (
     <Row className="blog-container">
@@ -78,6 +80,8 @@ export default function Blog({articoli}) {
         <Filters
           handleValueChange={handleValueChange}
           postShowing={posts.length}
+          radioValue={radioValue}
+          tagsArray={tagsArray}
         />
       </Col>
       <Col xs={12} md={8} id='colonna-articoli'>

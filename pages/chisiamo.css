@@ -1,0 +1,41 @@
+.mission-container{
+    border: 5px solid white;
+    background-color: #E2E2E2;
+    border-radius: 20px;
+    margin: 8% 10%; 
+    padding: 0 2%;
+}
+
+.mission-title-container h1 {
+    margin: 0;
+    background: #fff;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: -20px;
+    left: -45px;
+    transform: rotateZ(-1deg);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.fase-container{
+    margin: 0 3%;
+    padding: 0 1%;
+    border-left: 3px solid #5EB1B6;
+}
+
+@media screen and (max-width: 767px) {
+    
+    .mission-container{
+        margin: 26% 8% 5% 8%;
+    }
+
+    .mission-title-container h1 {
+        width: 100%;
+    }
+
+    .fase-container{
+        padding: 0 2%;
+    }
+}

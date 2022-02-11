@@ -4,7 +4,7 @@ import Image from 'next/image'
 import dayjs from 'dayjs'
 import { Col, Row } from 'react-bootstrap'
 
-export default function ArticoloCard({ articolo, type }) {
+export default function ArticoloCard({ articolo, type}) {
   const { title, slug, immagineCopertina, publishedDate, tags, autore } = articolo.fields
   const columnDimension  = type == 'home' ? 5 : 8
   const biggerText = type == 'home' ? 'text-container biggerText' : 'text-container'
@@ -29,7 +29,7 @@ export default function ArticoloCard({ articolo, type }) {
               <h4>{title}</h4>
               {/* the second p is positioned at the bottom of the blog-card */}
               <p>{autore ? 'Autore: ' + autore : 'Autore'}</p>
-              <p>Tag: <Link href={{pathname:'/blog', query: {data: tags}}}>{tags}</Link></p>
+              <p>Tag: <Link href={{pathname:'/blog', query: {data: tags}}}><a>{tags}</a></Link></p>
             </Col>
           </Row>
         </a>

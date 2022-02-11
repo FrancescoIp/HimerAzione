@@ -22,18 +22,11 @@
 .filter-border-bottom{
     padding: 5px 0 10px 0;
     margin-bottom: 10px;
-    border-bottom: 3px solid whitesmoke;
 }
 
 .blog-filter-container{
-    border-bottom: 3px solid whitesmoke;
+    margin-bottom: 20px;
 
-}
-
-.blog-filter-container button {
-    border: none;
-    margin-right: 3px;
-    background: none;
 }
 
 #colonna-articoli{
@@ -52,8 +45,7 @@
     border: 7px solid white;
     background-color: #E2E2E2;
     border-radius: 20px;
-    margin: 8% 20% 0 20%;
-    
+    margin: 8% 20% 0 20%; 
 }
 
 #articolo-img{
