@@ -60,7 +60,7 @@ export default function ArticoloDettagli({ articolo }) {
       "embedded-asset-block": (node) => {
         const alt = node.data.target.fields.title
         const url = node.data.target.fields.file.url
-        return <Image alt={alt} src={"https:" + url} width={600} height={230} />
+        return <Image alt={alt} src={"https:" + url} width={300} height={230} />
       }
     }
   }

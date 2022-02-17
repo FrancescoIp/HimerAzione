@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Polaroid({ title }) {
 
-    const h3Text = title ? title : 'Con affetto, himerazioene <3'
+    const h3Text = title ? title : 'Con affetto, himerazione <3'
 
 
     return (

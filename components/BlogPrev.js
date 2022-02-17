@@ -45,7 +45,7 @@ export default function BlogPrev({ articoli }) {
                         animate="animate"
                         initial="initial"
                         >
-                            <span>Raccontiamo</span> Termini
+                            Raccontiamo Termini Imerese
                         </motion.h3>
                         <motion.h3
                             id='title2'
@@ -53,7 +53,7 @@ export default function BlogPrev({ articoli }) {
                         animate="animate"
                         initial="initial"
                         >
-                            <span>Raccontiamo</span> Termini
+                            Raccontiamo Termini Imerese
                         </motion.h3>
                     </div>
                 </a>

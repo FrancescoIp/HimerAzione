@@ -25,7 +25,8 @@ export default function Blog(props) {
   //to get the data from the Link component and use to filter the posts
   const router = useRouter()
   // const tagCategory = !router.query.data ?:
-  console.log(router.query.data)
+  const tagForFiltering = router.query.data
+  console.log("questo",)
   
 
   const tagsArray = props.articoli.map((articolo)=>(articolo.fields.tags))
@@ -37,7 +38,7 @@ export default function Blog(props) {
     ricerca: emptyQuery,
   });
 
-  const [queryFilter, setQueryFilter] = useState("")
+  const [queryFilter, setQueryFilter] = useState('')
 
   const [radioValue, setRadioValue] = useState('Tutti');
 

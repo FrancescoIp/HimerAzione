@@ -29,7 +29,7 @@ export default function ArticoloCard({ articolo, type}) {
               <h4>{title}</h4>
               {/* the second p is positioned at the bottom of the blog-card */}
               <p>{autore ? 'Autore: ' + autore : 'Autore'}</p>
-              <p>Tag: <Link href={{pathname:'/blog', query: {data: tags}}}><a>{tags}</a></Link></p>
+              <p>Tag: {tags}</p>
             </Col>
           </Row>
         </a>

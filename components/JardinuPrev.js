@@ -8,11 +8,11 @@ export default function JardinuPrev() {
         <div className="jardinu-container">
             <div id="progetti" className='jardinu-prev-body'>
                 <div>
-                    <h3>Attiviamo stu jardinu</h3>
+                    <h3>RI-Attiviamo stu jardinu</h3>
                 </div>
                 <div>
                     <ShowMoreText
-                        lines={3}
+                        lines={4}
                         more="Mostra di più"
                         less="Mostra di meno"
                         className="jardinu-text"
@@ -27,8 +27,7 @@ export default function JardinuPrev() {
                            target="_blank"
                            title="produzionidalbasso/jardinu"
                         >
-                            mission associativa di
-                            HimerAzione
+                            mission associativa di HimerAzione
                         </a> {" "}
                          e che vede nel ridare nuova vita al giardino dell’Annunziata
                         la prima tappa per la crescita della Associazione e di tutta la città. Questo primo step dell’Associazione prevede
