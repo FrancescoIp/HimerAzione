@@ -103,7 +103,7 @@ export default function ArticoloDettagli({ articolo }) {
           display: inline-block;
           padding: 20px;
           position: relative;
-          top: -60px;
+          top: -6px;
           left: -10px;
           transform: rotateZ(-1deg);
           box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
