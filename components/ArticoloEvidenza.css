@@ -1,0 +1,22 @@
+.evidenza-container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.card-container-evidenza{
+    background-color: #5eb1b6 ;
+    border: 3px solid #376d88;
+    border-radius: 15px;
+    
+}
+
+.card-container-evidenza a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-container-evidenza{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
