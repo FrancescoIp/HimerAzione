@@ -1,6 +1,7 @@
 
 import { createClient } from 'contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Link from "next/dist/client/link"
 import Image from 'next/image'
 import Skeleton from '../../components/Skeleton'
 
@@ -49,39 +50,48 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export default function ArticoloDettagli({ articolo }) {
-  
-  if(!articolo) return <Skeleton />
 
-  const {title, tags, body, immagineCopertina} = articolo.fields
+  if (!articolo) return <Skeleton />
+
+  const { title, tags, body, immagineCopertina } = articolo.fields
 
   const options = {
+    renderText: text => {
+      return text.split('\n').reduce((children, textSegment, index) => {
+        return [...children, index > 0 && <br key={index} />, textSegment];
+      }, []);
+    },
     renderNode: {
       "embedded-asset-block": (node) => {
-          console.log(node)
-         const alt = node.data.target.fields.title
-         const url = node.data.target.fields.file.url
-         return <Image alt={alt} src={"https:" + url} width={300} height={230} />
+        const alt = node.data.target.fields.title
+        const url = node.data.target.fields.file.url
+        return <Image alt={alt} src={"https:" + url} width={300} height={230} objectFit="cover"/>
       }
     }
- }
+  }
+
 
   return (
-    <div>
+    <div className='pagina-articolo'>
       <div className="banner">
         <Image
           src={'https:' + immagineCopertina.fields.file.url}
-          // width={thumbnail.fields.file.details.image.width}
-          // height={thumbnail.fields.file.details.image.height}
           width={1200}
           height={400}
+          id='articolo-img'
         />
         <h2>{title}</h2>
-        <div className="info">
-          <p>Tags: {tags}</p>
+        <div className='container-articolo-body'>
+          <div className="info">
+            <p>Tags: <Link href={{pathname:'/blog', query: {data: tags}}}>{tags}</Link> </p>
+          </div>
+          <div className="method">
+            <div>{documentToReactComponents(body, options)}</div>
+          </div>
+          <span className='navigation-articolo'> <Link href={'/blog'}>Torna indietro</Link> / <Link href={'/'}>Home</Link> </span>
+            
         </div>
-        <div className="method">
-          <div>{documentToReactComponents(body,options)}</div>
-        </div>
+
       </div>
       <style jsx>{`
         h2,h3 {

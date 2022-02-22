@@ -1,0 +1,16 @@
+.nav-links a {
+    letter-spacing: 2px;
+    margin: 0 10px;
+}
+.nav-links a:hover {
+    color: black;
+}
+.active-nav-link{
+    border-bottom: 3px solid #fff;
+}
+
+@media screen and (max-width: 767px) {
+    #logo {
+        padding-left: 15%;
+    }
+}

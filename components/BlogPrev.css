@@ -1,4 +1,42 @@
-.BlogRrev-container{
-    margin: 10%;
+.BlogPrev-container {
+    margin: 10% 15% 5%;
 }
 
+.biggerText {
+    font-size: 22px;
+}
+
+.marquee-container h3 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 130px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee-container a:hover {
+   color: red;
+}
+
+.marquee-container #title1 {
+    right: -1057px;
+}
+
+.marquee-container #title2 {
+    right: 62px;
+}
+
+.marquee-container span {
+    -webkit-text-stroke:3px black;
+    -webkit-text-fill-color:transparent;
+}
+
+
+@media screen and (max-width: 767px) {
+    .BlogPrev-container {
+        margin: 10%;
+    }
+
+    .biggerText {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,35 @@
+.cartolina-space-container {
+    padding: 1%;
+    width: 30%;
+    position: absolute;
+    background-color: #3c406e;
+    border: 5px solid #d2a9d9;
+    color: white;
+    right: 30px;
+    bottom: -225px;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+    z-index: 4;
+}
+
+.cartolina-space-container p {
+    text-align: center;
+    margin-top: 15%;
+    font-family: 'Patrick Hand SC', cursive;
+   font-size: 35px;
+}
+
+.source-link {
+    font-size: 6px;
+    position: relative;
+    bottom: -15px;
+}
+
+@media screen and (max-width: 767px) {
+    .cartolina-space-container {
+        display: none;
+    }
+}

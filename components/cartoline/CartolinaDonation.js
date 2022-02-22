@@ -1,12 +1,22 @@
+import { motion } from "framer-motion";
+
 
 export default function CartolinaDonation() {
 
     return (
-            <div className='donation-body'>
-                <div className="content-container">
-                    <h2>Donate tutti i vostri soldini per una causa magnifica :D</h2>
-                    <button className="donation-button"><a href="https://www.google.it">Dona qui</a></button>
-                </div>
+        <motion.div
+            drag
+            dragConstraints={{ top: 50, right: 50, bottom: 50, left: 50 }}
+            className='donation-body'
+        >
+            <div className="content-container">
+                <h2>Donate tutti i vostri soldini per una causa magnifica :D</h2>
+                <button className="donation-button">
+                    <a href="https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/">
+                        Dona qui
+                    </a>
+                </button>
             </div>
+        </motion.div>
     )
 }

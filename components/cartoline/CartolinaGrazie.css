@@ -1,20 +1,21 @@
-.thankYou-body{
-
-    background-color: #FFC093 ;
+.thankYou-body {
+    
+    height: 248px;
+    width: 373px;
+    background-color: #FFC093;
     border: 2vh solid #FFF0BC;
-    height: 38%;
-    width: 30vw;
 
-    position: absolute;
-    top: 390px;
+
+    position: relative;
+    top: -45px;
     z-index: 1;
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     box-shadow: 0 4px 6px rgba(255, 244, 244, 0.3);
 
     display: inline-flex;
-    justify-content: center; /* center the content horizontally */
-    align-items: center; /* center the content vertically */
+    justify-content: center;
+    align-items: center;
 
     -webkit-transform: rotate(-7deg);
     -moz-transform: rotate(-7deg);
@@ -23,11 +24,18 @@
     transform: rotate(-7deg);
 }
 
+.btn-thxCard-home:hover {
+    box-shadow: none;
+    background-color: #ffea9d;
+}
+
 @media screen and (max-width: 767px) {
-    .thankYou-body{
+    .thankYou-body {
         border: .5vh solid #FFF0BC;
-        height: 10%;
-        top: 79vw;
+        font-size: 1.2em;
+        height: 110px;
+        width: 174px;
+        top: 5vh;
     }
 
 }
