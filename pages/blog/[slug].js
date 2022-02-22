@@ -56,14 +56,20 @@ export default function ArticoloDettagli({ articolo }) {
   const { title, tags, body, immagineCopertina } = articolo.fields
 
   const options = {
+    renderText: text => {
+      return text.split('\n').reduce((children, textSegment, index) => {
+        return [...children, index > 0 && <br key={index} />, textSegment];
+      }, []);
+    },
     renderNode: {
       "embedded-asset-block": (node) => {
         const alt = node.data.target.fields.title
         const url = node.data.target.fields.file.url
-        return <Image alt={alt} src={"https:" + url} width={300} height={230} />
+        return <Image alt={alt} src={"https:" + url} width={300} height={230} objectFit="cover"/>
       }
     }
   }
+
 
   return (
     <div className='pagina-articolo'>
