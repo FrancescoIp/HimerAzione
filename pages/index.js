@@ -32,9 +32,9 @@ export default function Home({ articoli }) {
 
       <CartolineHome/>
 
-      <ArticoloEvidenza articoli={articoli}/>
-
       <JardinuPrev />
+      
+      <ArticoloEvidenza articoli={articoli}/>
 
       <MDA />
 

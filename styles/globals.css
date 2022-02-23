@@ -36,33 +36,32 @@ body {
   background-color: #BBDEF0;
 }
 
-header {
-  background-color: #BBDEF0;
-  text-align: center;
-}
 
-header svg {
-  position: relative;
-  z-index: 999;
-}
 
 .navBarBG {
   background-color: #5EB1B6;
 }
 
-header a {
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-}
+@media screen and (max-width: 767px) {
+  .page-content {
+    margin-top: 160px;
+  }
 
-/* mettere l ombra all onda dell header */
-
-header Link {
-  display: inline;
 }
 
 
+
+.bold{
+  font-weight: bold;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.italic{
+  font-style: italic;
+}
 
 
 /* --------------- sezione manutenzione -------------- */

@@ -37,6 +37,9 @@
     #colonna-articoli{
         padding-left: 0;
     }
+    .blog-container h1{
+        font-size: 90px;
+    }
 }
 
 /* ------------------ pagina articolo ---------------- */

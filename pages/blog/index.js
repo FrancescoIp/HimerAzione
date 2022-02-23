@@ -26,7 +26,7 @@ export default function Blog(props) {
   const router = useRouter()
   // const tagCategory = !router.query.data ?:
   const tagForFiltering = router.query.data
-  console.log("questo",)
+  console.log("tagForFiltering:", tagForFiltering)
   
 
   const tagsArray = props.articoli.map((articolo)=>(articolo.fields.tags))

@@ -1,5 +1,6 @@
 .jardinu-container{
-    margin: 0 10%;
+    display: flex;
+    justify-content: center;
 }
 
 .jardinu-prev-body{
@@ -39,6 +40,6 @@
         font-size: 22px;
     }
     .jardinu-prev-body h3{
-        font-size: 3em;
+        font-size: 35px;
     }
 }

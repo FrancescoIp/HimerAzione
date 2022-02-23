@@ -17,20 +17,20 @@ footer p {
 
 .footer_cartolina-donazioni-body {
     font-family: 'Patrick Hand SC', cursive;
-    font-size: 2em;
+    font-size: 30px;
     text-transform: uppercase;
 
     position: relative;
-    top: -75px;
+    top: -144px;
     background-image: url('/donationCard.png');
     background-repeat: round;
     height: 360px;
     width: 100%;
-    margin: 0 auto;
     z-index: 1;
+    padding: 0 20px 30px 120px;
 
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
 
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -45,7 +45,6 @@ footer p {
 }
 
 .footer_donazione-card-text {
-    margin-right: 25%;
     text-align: center;
 }
 
@@ -124,17 +123,17 @@ footer p {
 
 @media screen and (max-width: 767px) {
     .thankYou-body_footer{
-        height: 360px;
         width: 100%;
-        top: -60px;
+        top: -115px;
+        left: 6px;
     }
     .thxCard-btn_footer {
-        font-size: 4em;
+        font-size: 3em;
         width: 84%;
         border-radius: 45px;
     }
     .cartolina-contatti-container {
-        top: 50px;
+        top: -7px;
         left: 20px;
     }
 

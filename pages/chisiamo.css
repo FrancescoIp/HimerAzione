@@ -1,6 +1,6 @@
 .mission-container{
-    border: 5px solid white;
-    background-color: #E2E2E2;
+    border: 5px solid #5EB1B6;
+    background-color: #f5fcfb;
     border-radius: 20px;
     margin: 8% 10%; 
     padding: 0 2%;
@@ -22,7 +22,6 @@
 .fase-container{
     margin: 0 3%;
     padding: 0 1%;
-    border-left: 3px solid #5EB1B6;
 }
 
 @media screen and (max-width: 767px) {

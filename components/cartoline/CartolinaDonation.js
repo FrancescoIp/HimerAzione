@@ -1,14 +1,8 @@
-import { motion } from "framer-motion";
-
 
 export default function CartolinaDonation() {
 
     return (
-        <motion.div
-            drag
-            dragConstraints={{ top: 50, right: 50, bottom: 50, left: 50 }}
-            className='donation-body'
-        >
+        <div className='donation-body'>
             <div className="content-container">
                 <h2>Donate tutti i vostri soldini per una causa magnifica :D</h2>
                 <button className="donation-button">
@@ -17,6 +11,6 @@ export default function CartolinaDonation() {
                     </a>
                 </button>
             </div>
-        </motion.div>
+        </div>
     )
 }

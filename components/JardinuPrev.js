@@ -60,7 +60,6 @@ export default function JardinuPrev() {
                         title="vai al jardinu!"
                         href="https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/">
                     </ButtonB>
-                    <ButtonA className="btn-jardinu" title="Il resto" href="/cosa-facciamo"></ButtonA>
                 </div>
             </div>
         </div>

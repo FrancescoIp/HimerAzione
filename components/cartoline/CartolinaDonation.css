@@ -3,6 +3,9 @@
     background-repeat: round ;
     height: 38%;
     width: 30vw;
+
+    display: flex;
+    align-items: center;
    
 
     position: absolute;
@@ -23,18 +26,18 @@
 }
 
 .content-container{
-    padding: 10%;
+    padding: 50px 20px 0 140px;
+    text-align: center;
 }
 
 .donation-body h2 {
-    padding: 0 26% 0 0;
     font-size: 1.4vw;
 }
 
 .donation-button {
     width: 50%;
     height: auto;
-    border: 2px solid #F28DFD;
+    border: 4px solid #7197CF;
     border-radius: 30px;
     background-color: white;
     display: inline-flex;
@@ -66,13 +69,7 @@
     .donation-button {
         margin: 2% 0;
         width: 92%;
-        height: auto;
-        border: 2px solid #F28DFD;
-        border-radius: 30px;
-        background-color: white;
-        display: inline-flex;
-        justify-content: center; /* center the content horizontally */
-        align-items: center; /* center the content vertically */
+        border: 2px solid #7197CF;
     }
 
     .donation-body h2 {
