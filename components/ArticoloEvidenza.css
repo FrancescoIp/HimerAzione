@@ -1,22 +1,47 @@
-.evidenza-container{
+.evidenza-container {
     margin: 5% auto 0 auto;
     width: 80%;
+    border-top: 4px solid white;
 }
 
-.card-container-evidenza{
-    background-color: #5eb1b6 ;
+.evidenza-container h3 {
+    text-align: center;
+    position: relative;
+    top: -20px;
+    left: 30px;
+    width: 17%;
+    background-color: #bbdef0;
+}
+
+.card-container-evidenza {
+    background-color: #5eb1b6;
     border: 3px solid #376d88;
     border-radius: 15px;
-    
+
 }
 
-.card-container-evidenza a{
+.card-container-evidenza a {
     text-decoration: none;
     color: white;
 }
 
-.text-container-evidenza{
+.text-container-evidenza {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .evidenza-container {
+        margin: 10% auto 0 auto;
+        width: 80%;
+        border-top: 4px solid white;
+    }
+
+    .evidenza-container h3 {
+        top: -17px;
+        left: 6px;
+        width: 50%;
+    }
+
 }

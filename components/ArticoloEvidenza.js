@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Col, Row } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
+
 
 
 export default function ArticoloEvidenza({ articoli }) {
@@ -14,12 +15,20 @@ export default function ArticoloEvidenza({ articoli }) {
         query: '(min-width: 1224px)'
     })
 
+    const [isRendered, setIsRendered] = useState(null)
+
+    useEffect(() => {
+        setIsRendered(isDesktopOrLaptop)
+    }, []);
+
     return (
+        <>
         <div className="evidenza-container">
+            <h3> Ultime Novità</h3>
             {articoliEvidenza.map((articoliE) => {
                 const { title, slug, immagineCopertina } = articoliE.fields
                 return (
-                    <Col key={slug} xs={12} className='card-container-evidenza mb-5'>
+                    <Col key={slug} className='card-container-evidenza mb-5'>
                         <Link href={'/blog/' + slug}>
                             <a>
                                 <Row>
@@ -27,14 +36,14 @@ export default function ArticoloEvidenza({ articoli }) {
                                         <Image
                                             src={'https:' + immagineCopertina.fields.file.url}
                                             width={640}
-                                            height={isDesktopOrLaptop ? 200 : 800}
+                                            height={isRendered ? 200 : 800}
                                             layout='responsive'
                                             id='BlogPrevCardImg'
                                         />
                                     </Col>
 
                                     <Col className='text-container-evidenza' >
-                                        <h3>{title}</h3>
+                                        <h4>{title}</h4>
                                     </Col>
                                 </Row>
                             </a>
@@ -42,7 +51,7 @@ export default function ArticoloEvidenza({ articoli }) {
                     </Col>
                 )
             })}
-
         </div>
+        </>
     )
 }

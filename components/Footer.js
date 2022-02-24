@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import CartolinaGrazie from './cartoline/CartolinaGrazie'
-import { FaFacebookSquare, FaMailBulk, FaInstagram } from 'react-icons/fa'
-import { motion } from "framer-motion";
+import { FaFacebookSquare, FaMailBulk, FaInstagram, FaYoutube } from 'react-icons/fa'
 import { Col, Row } from 'react-bootstrap'
 
 
@@ -26,13 +25,14 @@ export default function Footer() {
                             <li> <a href='https://www.facebook.com/search/top?q=himerazione'><FaFacebookSquare /> Facebook</a></li>
                             <li> <a href='https://www.instagram.com/himerazione/'><FaInstagram /> Instagram</a></li>
                             <li> <a href='/contatti'><FaMailBulk /> himerazione@gmail.com</a></li>
+                            <li> <a href='https://www.youtube.com/channel/UCITrHB3DDf_JThPgSI3A1-A'><FaYoutube /> YouTube </a></li>
                         </ul>
                     </div>
                 </Col>
                 <Col>
                     <div className='footer_cartolina-donazioni-body'>
                         <div className='footer_donazione-card-text'>
-                            <p>Dona i tuoi soldini per salvare un pezzo di Termini</p>
+                        <h2>Ricrediamoci. Diamo valore alla nostra identità, cultura e tradizione</h2>
                             <button>
                                 <a href='https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/'>
                                     Dona qui

@@ -11,7 +11,7 @@ export default function MDA() {
                     <BiRestaurant size={38} />
                 </div>
                 <div className="text-btn-container">
-                    <p>Per te una lista di dove puoi gustare fantastici cibi a Termini</p>
+                    <p>Il buon cibo a Termini Imerese è di casa!</p>
                     <ButtonA
                         className='btn-MDACArd1 btn-MDACard1__color-shadow'
                         title="Mangia"
@@ -24,7 +24,7 @@ export default function MDA() {
                     <BiBed size={38} />
                 </div>
                 <div className="text-btn-container">
-                    <p>Per te una lista di dove puoi gustare fantastici cibi a Termini</p>
+                    <p>Hotels e B&B sono pronti ad ospitarti!</p>
                     <ButtonA
                         className='btn-MDACArd1 btn-MDACard1__color-shadow'
                         title="Dormi"
@@ -37,7 +37,7 @@ export default function MDA() {
                     <BiBeenHere size={38} />
                 </div>
                 <div className="text-btn-container">
-                    <p>Per te una lista di dove puoi gustare fantastici cibi a Termini</p>
+                    <p>Esplora le meraviglie di Termini Imerese!</p>
                     <ButtonA
                         className='btn-MDACArd1 btn-MDACard1__color-shadow'
                         title="Ama"
