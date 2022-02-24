@@ -13,7 +13,7 @@ export default function CartolinaSPace() {
                         layout='responsive'
                     />
                 </Col>
-                <Col>
+                <Col xs={5}>
                     <p>HimerAzione, verso l'infinito e oltre!!</p>
                     <span className='source-link'>
                         Illustration by
