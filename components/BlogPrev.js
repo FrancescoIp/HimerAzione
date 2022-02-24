@@ -13,9 +13,9 @@ export default function BlogPrev({ articoli }) {
             opacity: 1,
             transition: {
                 repeat: Infinity,
-                repeatDelay: 1.8,
+                repeatDelay: 2.3,
                 ease: "linear",
-                duration: 6
+                duration: 8
             },
         }
     }
@@ -25,10 +25,10 @@ export default function BlogPrev({ articoli }) {
             opacity: 1,
             transition: {
                 repeat: Infinity,
-                repeatDelay: 1.8,
+                repeatDelay: 2.3,
                 ease: "linear",
-                duration: 6,
-                delay: 4
+                duration: 8,
+                delay: 5
 
             },
         }
