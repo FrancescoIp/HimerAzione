@@ -1,26 +1,12 @@
 .cartolina-space-container {
-    /* padding: 1%;
-    width: 30%;
-    position: relative;
-    background-color: #5eb1b6;
-    border: 5px solid #ffffff;
-    color: white;
-    right: 30px;
-    bottom: -225px;
-    -webkit-transform: rotate(4deg);
-    -moz-transform: rotate(4deg);
-    -o-transform: rotate(4deg);
-    -ms-transform: rotate(4deg);
-    transform: rotate(4deg);
-    z-index: 4; */
 
     width: 373px;
     background-color: #ffffff;
     border: 5px solid #5eb1b6;
 
-
+    
     position: relative;
-    left: 1204px;
+    left: 1130px;
     bottom: 151px;
     z-index: 1;
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);

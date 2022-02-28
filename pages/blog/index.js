@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import { Row, Col } from 'react-bootstrap'
 import { createClient } from 'contentful'
 import { motion } from "framer-motion";
-import { useMediaQuery } from 'react-responsive'
 import Filters from '../../components/BlogFilters';
 import ArticoloCard, {EventoProgettoCard} from '../../components/ArticoloCard'
 
@@ -23,10 +22,8 @@ export async function getStaticProps() {
 }
 
 export default function Blog(props) {
-  //to get the data from the Link component and use to filter the posts
   const router = useRouter()
-  // const tagCategory = !router.query.data ?:
-  const tagForFiltering = router.query.data
+  const tagForFiltering = !!router.query.tag ? router.query.tag : ''
   
   const tagsArray = props.articoli.map((articolo)=>(articolo.fields.tags))
 
@@ -37,7 +34,7 @@ export default function Blog(props) {
     ricerca: emptyQuery,
   });
 
-  const [queryFilter, setQueryFilter] = useState('')
+  const [queryFilter, setQueryFilter] = useState(tagForFiltering)
 
   const [radioValue, setRadioValue] = useState('Tutti');
 
@@ -64,7 +61,7 @@ export default function Blog(props) {
     })
 
 
-  }, [queryFilter, props.articoli]);
+  }, [queryFilter, props.articoli, tagForFiltering]);
 
   const { filteredData, query } = state
   const hasSearchResults = filteredData && query !== emptyQuery
@@ -88,7 +85,7 @@ export default function Blog(props) {
         {posts.map((articolo) => {
           if(articolo.fields.tags === 'Eventi'){
             return (
-              <EventoProgettoCard articolo={articolo} type='blog'/>
+              <EventoProgettoCard key={articolo.fields.title} articolo={articolo} type='blog'/>
             )
              
           }

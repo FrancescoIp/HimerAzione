@@ -32,7 +32,7 @@ export default function Home({ articoli }) {
 
       <JardinuPrev />
 
-      <ArticoliEvidenza articoli={articoli} />
+      <ArticoliEvidenza  articoli={articoli} />
 
       <MDA />
 

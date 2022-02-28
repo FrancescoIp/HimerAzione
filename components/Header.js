@@ -9,7 +9,7 @@ export default function Header({ pageMarginTop, setPageMarginTop }) {
 
     const navLinksBorderAnimations = { borderBottom: '3px solid #fff' }
     function handleClick() {
-        if (!pageMarginTop.isOpen){
+        if (!pageMarginTop.isOpen) {
             setPageMarginTop({
                 margin: '180px',
                 isOpen: true
@@ -51,7 +51,18 @@ export default function Header({ pageMarginTop, setPageMarginTop }) {
                                     <a>PROGETTI</a>
                                 </NavLink>
                             </motion.span>
+                            <motion.span whileHover={navLinksBorderAnimations}>
+                                <NavLink href={{
+                                    pathname: "/blog",
+                                    query: {
+                                        tag: "Eventi"
+                                    }
+                                }}>
+                                    <a>Eventi</a>
+                                </NavLink>
+                            </motion.span>
                         </Col>
+
                         <Col className='nav-links nav-end'>
                             <motion.span whileHover={navLinksBorderAnimations}>
                                 <NavLink href="/chisiamo">
