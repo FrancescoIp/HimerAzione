@@ -1,9 +1,9 @@
 .cartolina-space-container {
-    padding: 1%;
+    /* padding: 1%;
     width: 30%;
-    position: absolute;
-    background-color: #3c406e;
-    border: 5px solid #d2a9d9;
+    position: relative;
+    background-color: #5eb1b6;
+    border: 5px solid #ffffff;
     color: white;
     right: 30px;
     bottom: -225px;
@@ -12,33 +12,52 @@
     -o-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
     transform: rotate(4deg);
-    z-index: 4;
+    z-index: 4; */
+
+    width: 373px;
+    background-color: #ffffff;
+    border: 5px solid #5eb1b6;
+
+
+    position: relative;
+    left: 1204px;
+    bottom: 151px;
+    z-index: 1;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(255, 244, 244, 0.3);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
 }
 
 .cartolina-space-container p {
     text-align: center;
     font-family: 'Patrick Hand SC', cursive;
-    font-size: 35px;
+    font-size: 30px;
     margin: 0;
 }
 
-.source-link {
-    font-size: 6px;
-    position: relative;
-    bottom: -15px;
-}
+
 
 @media screen and (max-width: 767px) {
     .cartolina-space-container {
-        width: 50%;
-        right: 192px;
-        bottom: 227px;
-        z-index: 1;
+        font-size: 1.2em;
+        width: 174px;
+        left: 0px;
+        bottom: -60px;
     }
     .cartolina-space-container p {
         text-align: center;
         font-family: 'Patrick Hand SC', cursive;
-        font-size: 12px;
+        font-size: 50%;
         margin: 0;
     }
 }
