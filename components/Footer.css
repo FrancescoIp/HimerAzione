@@ -51,7 +51,7 @@ footer p {
 
 .footer_donazione-card-text div {
     color: black;
-    font-size: 30px;
+    font-size: 1.8vw;
     border-bottom:2px solid #7197CF;
 }
 
@@ -60,7 +60,7 @@ footer p {
     background-color: transparent;
     border: 4px solid #7197CF;
     border-radius: 30px;
-    width: 80%;
+    width: 100%;
 }
 
 .footer_donazione-card-text button a {
@@ -129,12 +129,16 @@ footer p {
 
 @media screen and (max-width: 767px) {
     .footer_cartolina-donazioni-body {
-        padding: 0;
+        padding: 0 50px 0px 0px;
         align-items: center;
+        justify-content: flex-end;
     }
 
-    .footer_donazione-card-text h2 {
-        font-size: 30px;
+    .footer_donazione-card-text div {
+        margin-left: 20px;
+        color: black;
+        font-size: 25px;
+        border-bottom:2px solid #7197CF;
     }
 
     .thankYou-body_footer {
