@@ -2,6 +2,7 @@ import Image from 'next/image'
 import CartolinaGrazie from './cartoline/CartolinaGrazie'
 import { FaFacebookSquare, FaMailBulk, FaInstagram, FaYoutube } from 'react-icons/fa'
 import { Col, Row } from 'react-bootstrap'
+import { motion } from "framer-motion"
 
 
 export default function Footer() {
@@ -36,11 +37,19 @@ export default function Footer() {
                             <div>valore alla nostra</div>
                             <div>identità, cultura e</div>
                             <div>tradizione</div>
-                            <button>
+                            <motion.button
+                                style={{ boxShadow: "0px 5px  #274a7d" }}
+                                whileHover={
+                                    {
+                                        y: 3,
+                                        boxShadow: "0 0px 0px 0px #274a7d"
+                                    }
+                                }
+                            >
                                 <a href='https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/'>
-                                    Dona qui
+                                    DONA QUI
                                 </a>
-                            </button>
+                            </motion.button>
                         </div>
                     </div>
                 </Col>

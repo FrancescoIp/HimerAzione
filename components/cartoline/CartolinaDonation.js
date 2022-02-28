@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 
 export default function CartolinaDonation() {
 
@@ -8,11 +10,18 @@ export default function CartolinaDonation() {
                 <div>valore alla nostra</div>
                 <div>identità, cultura e</div>
                 <div>tradizione</div>
-                <button className="donation-button">
+                <motion.button
+                whileHover={
+                    {
+                        y: 3,
+                        boxShadow: "0 0px 0px 0px #274a7d"
+                      }
+                }
+                 className="donation-button">
                     <a href="https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/">
                         Dona qui
                     </a>
-                </button>
+                </motion.button>
             </div>
         </div>
     )
