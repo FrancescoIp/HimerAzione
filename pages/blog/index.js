@@ -3,8 +3,9 @@ import { useRouter } from 'next/router'
 import { Row, Col } from 'react-bootstrap'
 import { createClient } from 'contentful'
 import { motion } from "framer-motion";
+import { useMediaQuery } from 'react-responsive'
 import Filters from '../../components/BlogFilters';
-import ArticoloCard from '../../components/ArticoloCard'
+import ArticoloCard, {EventoProgettoCard} from '../../components/ArticoloCard'
 
 
 export async function getStaticProps() {
@@ -26,9 +27,7 @@ export default function Blog(props) {
   const router = useRouter()
   // const tagCategory = !router.query.data ?:
   const tagForFiltering = router.query.data
-  console.log("tagForFiltering:", tagForFiltering)
   
-
   const tagsArray = props.articoli.map((articolo)=>(articolo.fields.tags))
 
   const emptyQuery = ""
@@ -87,6 +86,12 @@ export default function Blog(props) {
       </Col>
       <Col xs={12} md={8} id='colonna-articoli'>
         {posts.map((articolo) => {
+          if(articolo.fields.tags === 'Eventi'){
+            return (
+              <EventoProgettoCard articolo={articolo} type='blog'/>
+            )
+             
+          }
           return (
             <ArticoloCard key={articolo.sys.id} articolo={articolo} />
           )

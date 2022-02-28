@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import dayjs from 'dayjs'
 import { Col, Row } from 'react-bootstrap'
+import { motion } from "framer-motion"
+import { useMediaQuery } from 'react-responsive'
 
-export default function ArticoloCard({ articolo, type}) {
+export default function ArticoloCard({ articolo, type }) {
   const { title, slug, immagineCopertina, publishedDate, tags } = articolo.fields
-  const columnDimension  = type == 'home' ? 5 : 8
+  const columnDimension = type == 'home' ? 5 : 8
   const biggerText = type == 'home' ? 'text-container biggerText' : 'text-container'
 
   return (
@@ -29,6 +31,57 @@ export default function ArticoloCard({ articolo, type}) {
               <h4>{title}</h4>
               {/* the second p is positioned at the bottom of the blog-card */}
               <p>Tag: {tags}</p>
+            </Col>
+          </Row>
+        </a>
+      </Link>
+    </Col>
+  )
+}
+
+export function EventoProgettoCard({ articolo, type }) {
+
+  const styleBlogVariations = type == 'blog' ? {class: 'card-container-evidenza mb-5 width-blog', col: 12} : {class: 'card-container-evidenza mb-5 ', col: 5}
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
+
+  const [isDesktop, setisDesktop] = useState(null)
+
+  useEffect(() => {
+    setisDesktop(isDesktopOrLaptop)
+  }, [isDesktopOrLaptop]);
+
+  const { title, slug, immagineCopertina } = articolo.fields
+
+  return (
+    <Col as={motion.div}
+      whileHover={
+        {
+          y: 3,
+          boxShadow: "0 0px 0px 0px rgba(255, 142, 93, 1)",
+          transition: {
+            duration: 0.2
+          }
+        }
+      }
+      style={{ boxShadow: " 2px 5px #274a7d" }}
+      key={slug} className={styleBlogVariations.class} >
+      <Link href={'/blog/' + slug}>
+        <a>
+          <Row>
+            <Col className='image-card-container p-6 ' xs={styleBlogVariations.col} >
+              <Image
+                src={'https:' + immagineCopertina.fields.file.url}
+                width={640}
+                height={isDesktop ? 200 : 600}
+                layout='responsive'
+                id='BlogPrevCardImg'
+              />
+            </Col>
+            <Col className='text-container-evidenza' >
+              <h4>{title}</h4>
             </Col>
           </Row>
         </a>

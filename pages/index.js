@@ -3,7 +3,7 @@ import CartolineHome from '../components/cartoline/Cartoline'
 import JardinuPrev from '../components/JardinuPrev'
 import MDA from '../components/MangiaDormiAma'
 import BlogPrev from '../components/BlogPrev'
-import ArticoloEvidenza from '../components/ArticoloEvidenza'
+import ArticoliEvidenza from '../components/ArticoliEvidenza'
 import { createClient } from 'contentful'
 
 export async function getStaticProps() {
@@ -32,7 +32,7 @@ export default function Home({ articoli }) {
 
       <JardinuPrev />
 
-      <ArticoloEvidenza articoli={articoli} />
+      <ArticoliEvidenza articoli={articoli} />
 
       <MDA />
 

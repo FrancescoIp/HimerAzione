@@ -34,11 +34,18 @@
   font-size: .9em;
 }
 
+.width-blog{
+  width: 66%;
+}
+
 @media screen and (max-width: 767px) {
     .card-container{
         background-color: #8BC5E2 ;
         margin-bottom: 35px;
         border: 3px solid white;
         border-radius: 15px;
+    }
+    .width-blog{
+       width: 100%;
     }
 }
