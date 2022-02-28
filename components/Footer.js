@@ -32,7 +32,10 @@ export default function Footer() {
                 <Col>
                     <div className='footer_cartolina-donazioni-body'>
                         <div className='footer_donazione-card-text'>
-                        <h2>Ricrediamoci. Diamo valore alla nostra identità, cultura e tradizione</h2>
+                            <div>Ricrediamoci. Diamo</div>
+                            <div>valore alla nostra</div>
+                            <div>identità, cultura e</div>
+                            <div>tradizione</div>
                             <button>
                                 <a href='https://www.produzionidalbasso.com/project/riattiviamo-stu-jardinu-himerazione/'>
                                     Dona qui

@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import { Row } from 'react-bootstrap'
 import { motion } from "framer-motion";
-
 import ArticoloCard from './ArticoloCard'
-
 
 export default function BlogPrev({ articoli }) {
 
@@ -86,7 +84,6 @@ export default function BlogPrev({ articoli }) {
                     border-left: 3px solid #FAE92B;
                     padding-left: 3px;
                     font-size: 1.8em;
-                    
                 }
                 `}
             </style>

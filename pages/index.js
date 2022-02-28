@@ -15,7 +15,6 @@ export async function getStaticProps() {
 
   const res = await client.getEntries({ content_type: 'blogPost' })
 
-
   return {
     props: {
       articoli: res.items
@@ -24,17 +23,16 @@ export async function getStaticProps() {
   }
 }
 
-
 export default function Home({ articoli }) {
   return (
 
     <div className="homeBG">
 
-      <CartolineHome/>
+      <CartolineHome />
 
       <JardinuPrev />
-      
-      <ArticoloEvidenza articoli={articoli}/>
+
+      <ArticoloEvidenza articoli={articoli} />
 
       <MDA />
 
