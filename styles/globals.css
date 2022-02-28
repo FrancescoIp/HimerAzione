@@ -36,7 +36,14 @@ body {
   background-color: #BBDEF0;
 }
 
-
+.cartoline-container{
+  min-height: 120vh;
+}
+@media screen and (max-width: 767px) {
+  .cartoline-container{
+    min-height: 60vh;
+  }
+}
 
 .navBarBG {
   background-color: #5EB1B6;
