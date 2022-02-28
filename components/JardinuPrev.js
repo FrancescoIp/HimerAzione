@@ -1,8 +1,21 @@
+import React, { useState, useEffect } from 'react'
 import ShowMoreText from "react-show-more-text";
 import ButtonB from "./buttons/customButtonB"
+import { useMediaQuery } from 'react-responsive'
+
 
 
 export default function JardinuPrev() {
+
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-width: 1224px)'
+    })
+
+    const [isDesktop, setisDesktop] = useState(null)
+
+    useEffect(() => {
+        setisDesktop(isDesktopOrLaptop)
+    }, [isDesktopOrLaptop]);
 
     return (
         <div className="jardinu-container">
@@ -12,7 +25,7 @@ export default function JardinuPrev() {
                 </div>
                 <div>
                     <ShowMoreText
-                        lines={2}
+                        lines={isDesktop ? 2 : 8}
                         more="Mostra di più"
                         less="Mostra di meno"
                         className="jardinu-text"
