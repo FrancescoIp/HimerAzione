@@ -37,7 +37,8 @@ body {
 }
 
 .cartoline-container{
-  min-height: 120vh;
+  margin-bottom: -10%;
+  min-height: 100vh;
 }
 @media screen and (max-width: 767px) {
   .cartoline-container{

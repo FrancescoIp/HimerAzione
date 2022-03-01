@@ -38,6 +38,7 @@
 @media screen and (max-width: 767px) {
     .polaroid-body{
         top: 10vh;
+        right: 9px;
         width: 94vw;
     }
 }
