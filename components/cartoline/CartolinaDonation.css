@@ -36,7 +36,7 @@
 }
 
 .donation-button {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     height: auto;
     border: 4px solid #7197CF;
@@ -50,7 +50,7 @@
 
 .donation-button a {
     font-weight: 600;
-    font-size: 2.2em;
+    font-size: 1.4em;
     text-transform: uppercase;
     text-decoration: none;
     color: black;

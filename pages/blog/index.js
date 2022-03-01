@@ -60,7 +60,6 @@ export default function Blog(props) {
       filteredData,
     })
 
-
   }, [queryFilter, props.articoli, tagForFiltering]);
 
   const { filteredData, query } = state
@@ -83,11 +82,10 @@ export default function Blog(props) {
       </Col>
       <Col xs={12} md={8} id='colonna-articoli'>
         {posts.map((articolo) => {
-          if(articolo.fields.tags === 'Eventi'){
+          if(articolo.fields.tags === 'Eventi' || articolo.fields.tags === 'Progetti'){
             return (
               <EventoProgettoCard key={articolo.fields.title} articolo={articolo} type='blog'/>
             )
-             
           }
           return (
             <ArticoloCard key={articolo.sys.id} articolo={articolo} />

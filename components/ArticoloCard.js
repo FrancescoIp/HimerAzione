@@ -41,7 +41,15 @@ export default function ArticoloCard({ articolo, type }) {
 
 export function EventoProgettoCard({ articolo, type }) {
 
-  const styleBlogVariations = type == 'blog' ? {class: 'card-container-evidenza mb-5 width-blog', col: 12} : {class: 'card-container-evidenza mb-5 ', col: 5}
+  const styleBlogVariations = type == 'blog' ? {
+    class: 'card-container-evidenza mb-5 width-blog',
+    col: 12,
+    id: 'BlogPrevCardImg-big'
+  } : {
+    class: 'card-container-evidenza mb-5 ',
+    col: 5,
+    id: 'BlogPrevCardImg'
+  }
 
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
@@ -75,9 +83,9 @@ export function EventoProgettoCard({ articolo, type }) {
               <Image
                 src={'https:' + immagineCopertina.fields.file.url}
                 width={640}
-                height={isDesktop ? 200 : 600}
+                height={isDesktop ? 200 : 800}
                 layout='responsive'
-                id='BlogPrevCardImg'
+                id={styleBlogVariations.id}
               />
             </Col>
             <Col className='text-container-evidenza' >

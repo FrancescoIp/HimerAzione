@@ -1,51 +1,57 @@
-#BlogPrevCardImg{
+#BlogPrevCardImg {
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
 }
 
-.image-card-container{
+#BlogPrevCardImg-big {
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.image-card-container {
     width: 100%;
 }
 
-.card-container{
-    background-color: #8BC5E2 ;
+.card-container {
+    background-color: #8BC5E2;
     border: 3px solid white;
     border-radius: 15px;
 }
-.card-container a{
+
+.card-container a {
     margin: 0;
     color: black;
     text-decoration: none;
 }
-.card-container p{
+
+.card-container p {
     font-style: italic;
     font-size: .7em;
     margin: 0;
 }
-.card-container .text-container{
+
+.card-container .text-container {
     position: relative;
     margin-top: 12px;
 }
 
-.text-container p:nth-of-type(2){
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 2px;
-  font-size: .9em;
+.text-container p:nth-of-type(2) {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2px;
+    font-size: .9em;
 }
 
-.width-blog{
-  width: 66%;
+.width-blog {
+    width: 66%;
 }
 
 @media screen and (max-width: 767px) {
-    .card-container{
-        background-color: #8BC5E2 ;
+    .card-container {
         margin-bottom: 35px;
-        border: 3px solid white;
-        border-radius: 15px;
     }
-    .width-blog{
-       width: 100%;
+
+    .width-blog {
+        width: 100%;
     }
 }

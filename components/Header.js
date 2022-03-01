@@ -46,8 +46,28 @@ export default function Header({ pageMarginTop, setPageMarginTop }) {
                                     <a>BLOG</a>
                                 </NavLink>
                             </motion.span>
+
                             <motion.span whileHover={navLinksBorderAnimations}>
-                                <NavLink href="/progetti">
+                                <NavLink href="/chisiamo">
+                                    <a>MISSION</a>
+                                </NavLink>
+                            </motion.span>
+                            <motion.span whileHover={navLinksBorderAnimations}>
+                                <NavLink href="/contact">
+                                    <a>CONTATTACI</a>
+                                </NavLink>
+                            </motion.span>
+                        </Col>
+
+                        <Col className='nav-links nav-end'>
+                            <motion.span whileHover={navLinksBorderAnimations}>
+                                <NavLink
+                                    href={{
+                                        pathname: "/blog",
+                                        query: {
+                                            tag: "Progetti"
+                                        }
+                                    }}>
                                     <a>PROGETTI</a>
                                 </NavLink>
                             </motion.span>
@@ -59,19 +79,6 @@ export default function Header({ pageMarginTop, setPageMarginTop }) {
                                     }
                                 }}>
                                     <a>Eventi</a>
-                                </NavLink>
-                            </motion.span>
-                        </Col>
-
-                        <Col className='nav-links nav-end'>
-                            <motion.span whileHover={navLinksBorderAnimations}>
-                                <NavLink href="/chisiamo">
-                                    <a>MISSION</a>
-                                </NavLink>
-                            </motion.span>
-                            <motion.span whileHover={navLinksBorderAnimations}>
-                                <NavLink href="/contact">
-                                    <a>CONTATTACI</a>
                                 </NavLink>
                             </motion.span>
                         </Col>
