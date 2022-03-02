@@ -13,7 +13,7 @@ export default function ArticoliEvidenza({ articoli }) {
                 <h3> Ultime Novità</h3>
                 {articoliEvidenza.map((articoliE) => {
                     return (
-                        <EventoProgettoCard articolo={articoliE}/>
+                        <EventoProgettoCard key={articoliE.fields.slug} articolo={articoliE}/>
                     )
                 })}
             </div>

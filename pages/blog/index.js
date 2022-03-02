@@ -7,12 +7,15 @@ import Filters from '../../components/BlogFilters';
 import ArticoloCard, {EventoProgettoCard} from '../../components/ArticoloCard'
 
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  
+  const locale = context.locale
+  
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   })
-  const res = await client.getEntries({ content_type: 'blogPost' })
+  const res = await client.getEntries({ content_type: 'blogPost',locale })
   return {
     props: {
       articoli: res.items
@@ -21,11 +24,13 @@ export async function getStaticProps() {
   }
 }
 
-export default function Blog(props) {
+export default function Blog({articoli}) {
+  console.log(articoli[0])
   const router = useRouter()
+  
   const tagForFiltering = !!router.query.tag ? router.query.tag : ''
   
-  const tagsArray = props.articoli.map((articolo)=>(articolo.fields.tags))
+  const tagsArray = articoli.map((articolo)=>(articolo.fields.tags))
 
   const emptyQuery = ""
   // need a better declaration of this useState
@@ -46,7 +51,7 @@ export default function Blog(props) {
   useEffect(() => {
     const query = queryFilter
 
-    const filteredData = props.articoli.filter(post => {
+    const filteredData = articoli.filter(post => {
       const { title, slug, tags } = post.fields
       return (
         // standardize data with .toLowerCase()
@@ -60,11 +65,11 @@ export default function Blog(props) {
       filteredData,
     })
 
-  }, [queryFilter, props.articoli, tagForFiltering]);
+  }, [queryFilter, articoli, tagForFiltering]);
 
   const { filteredData, query } = state
   const hasSearchResults = filteredData && query !== emptyQuery
-  const posts = hasSearchResults ? filteredData : props.articoli
+  const posts = hasSearchResults ? filteredData : articoli
 
   return (
     <Row className="blog-container">
