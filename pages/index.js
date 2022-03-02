@@ -5,6 +5,7 @@ import MDA from '../components/MangiaDormiAma'
 import BlogPrev from '../components/BlogPrev'
 import ArticoliEvidenza from '../components/ArticoliEvidenza'
 import { createClient } from 'contentful'
+import useTranslation from 'next-translate/useTranslation'
 
 export async function getStaticProps() {
 
@@ -24,11 +25,15 @@ export async function getStaticProps() {
 }
 
 export default function Home({ articoli }) {
+  let { t } = useTranslation()
+ 
   return (
 
     <div className="homeBG">
 
       <CartolineHome />
+
+      <h1>{t('common:greeting')}</h1>
 
       <JardinuPrev />
 

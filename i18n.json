@@ -1,0 +1,11 @@
+{
+    "locales": [
+        "it-IT",
+        "en-US"
+    ],
+    "defaultLocale": "it-IT",
+    "pages":{
+        "*": ["common"],
+        "/chisiamo": ["chisiamo"]
+    }
+}

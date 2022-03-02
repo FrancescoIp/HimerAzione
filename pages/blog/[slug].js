@@ -27,10 +27,12 @@ export const getStaticPaths = async () => {
   }
 }
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params,locale }) => {
+  
   const { items } = await client.getEntries({
     content_type: 'blogPost',
-    'fields.slug': params.slug
+    'fields.slug': params.slug,
+    locale
   })
 
   if (!items.length) {
