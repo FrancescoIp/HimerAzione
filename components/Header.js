@@ -4,15 +4,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 import NavLink from './NavLink';
 import { useRouter } from 'next/router'
+import useTranslation from 'next-translate/useTranslation'
 
 export default function Header({ pageMarginTop, setPageMarginTop }) {
+    let { t } = useTranslation()
     let router = useRouter()
 
     const navLinksBorderAnimations = { borderBottom: '3px solid #fff' }
     function handleClick() {
         if (!pageMarginTop.isOpen) {
             setPageMarginTop({
-                margin: '200px',
+                margin: '180px',
                 isOpen: true
             })
             return
@@ -97,7 +99,7 @@ export default function Header({ pageMarginTop, setPageMarginTop }) {
                                         return (
                                             <li key={locale}>
                                                 <Link href={router.asPath} locale={locale}>
-                                                    <a>{locale}</a>
+                                                    <a>{locale === "it-IT" ? t('common:locale-it'):t('common:locale-uk')}</a>
                                                 </Link>
                                             </li>
                                         )

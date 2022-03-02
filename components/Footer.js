@@ -25,7 +25,7 @@ export default function Footer() {
                         <ul className='cartolina-contatti-box'>
                             <li> <a href='https://www.facebook.com/search/top?q=himerazione'><FaFacebookSquare /> Facebook</a></li>
                             <li> <a href='https://www.instagram.com/himerazione/'><FaInstagram /> Instagram</a></li>
-                            <li> <a href='/contatti'><FaMailBulk /> himerazione@gmail.com</a></li>
+                            <li> <a href='/contact'><FaMailBulk /> himerazione@gmail.com</a></li>
                             <li> <a href='https://www.youtube.com/channel/UCITrHB3DDf_JThPgSI3A1-A'><FaYoutube /> YouTube </a></li>
                         </ul>
                     </div>

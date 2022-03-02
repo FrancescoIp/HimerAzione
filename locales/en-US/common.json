@@ -1,3 +1,6 @@
 {
-    "greeting": "HI BUDDY"
+    "greeting": "HI BUDDY",
+    "locale-it": "italian",
+    "locale-uk": "english"
+
 }

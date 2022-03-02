@@ -6,9 +6,9 @@
 
     
     position: relative;
-    left: 1143px;
-    bottom: 314px;
-    z-index: 1;
+    bottom: 563px;
+    margin-left: 73vw;
+    z-index: 3;
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     box-shadow: 0 4px 6px rgba(255, 244, 244, 0.3);
@@ -39,6 +39,8 @@
         width: 174px;
         left: -7px;
         bottom: 68px;
+        margin: 0;
+        z-index: 1;
     }
     .cartolina-space-container p {
         text-align: center;

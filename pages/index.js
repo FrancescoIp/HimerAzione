@@ -33,7 +33,7 @@ export default function Home({ articoli }) {
 
       <CartolineHome />
 
-      <h1>{t('common:greeting')}</h1>
+      {/* <h1>{t('common:greeting')}</h1> */}
 
       <JardinuPrev />
 

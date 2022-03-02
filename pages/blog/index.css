@@ -2,6 +2,7 @@
 .blog-container{
     padding: 2% 8% 0 8%;
 }
+
 .blog-container h1{
     white-space: nowrap;
     color: #FFF;
@@ -30,6 +31,7 @@
 }
 
 #colonna-articoli{
+    padding-top: 30px;
     padding-left: 60px;
 }
 

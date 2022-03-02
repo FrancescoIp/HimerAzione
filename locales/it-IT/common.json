@@ -1,3 +1,5 @@
 {
-    "greeting": "CIAO COMPA"
+    "greeting": "CIAO COMPA",
+    "locale-it": "italiano",
+    "locale-uk": "inglese"
 }
