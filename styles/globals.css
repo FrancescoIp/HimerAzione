@@ -37,13 +37,31 @@ body {
 }
 
 .cartoline-container{
-  margin-bottom: -10%;
-  min-height: 100vh;
+  margin-bottom: -25%;
+  min-height: 10vh;
 }
+
+
 @media screen and (max-width: 767px) {
   .cartoline-container{
+    margin-bottom: 0;
     min-height: 60vh;
   }
+}
+
+.count-view-container{
+  margin: 0 20px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: rgba(48, 194, 174, 0.274);
+}
+
+.count-view-container p{
+  margin: 0;
 }
 
 .navBarBG {

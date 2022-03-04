@@ -8,6 +8,7 @@ export default function Layout({ children }) {
     isOpen:false
   })
 
+
   return (
     <div className="layout">
       <Header pageMarginTop={pageMarginTop} setPageMarginTop={setPageMarginTop} />

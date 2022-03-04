@@ -1,4 +1,6 @@
 
+import { useState, useEffect } from 'react';
+import VisitCount from '../components/VisitCount';
 import CartolineHome from '../components/cartoline/Cartoline'
 import JardinuPrev from '../components/JardinuPrev'
 import MDA from '../components/MangiaDormiAma'
@@ -25,6 +27,17 @@ export async function getStaticProps() {
 }
 
 export default function Home({ articoli }) {
+  const [viewCount, setViewCount] =  useState(0)
+
+  useEffect(()=>{
+    fetch('https://api.countapi.xyz/update/himerazione.it/count/?amount=1')
+    .then((res) => res.json())
+    .then((data) => {
+      setViewCount(data)
+      
+    })
+  },[]) 
+
   let { t } = useTranslation()
  
   return (
@@ -32,6 +45,8 @@ export default function Home({ articoli }) {
     <div className="homeBG">
 
       <CartolineHome />
+
+      <VisitCount viewCount={viewCount}/>
 
       {/* <h1>{t('common:greeting')}</h1> */}
 
