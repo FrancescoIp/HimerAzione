@@ -1,11 +1,9 @@
 {
-    "locales": [
-        "it-IT",
-        "en-US"
-    ],
-    "defaultLocale": "it-IT",
-    "pages":{
-        "*": ["common"],
-        "/chisiamo": ["chisiamo"]
-    }
+  "locales": ["it-IT", "en-US"],
+  "defaultLocale": "it-IT",
+  "pages": {
+    "*": ["common"],
+    "/chisiamo": ["chisiamo"],
+    "/tour/giro-chiese": ["home-giro-chiese"]
+  }
 }
