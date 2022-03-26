@@ -1,6 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 
-export default function Chiesa1() {
+export default function SanGiacomo() {
   let { t } = useTranslation();
-  return <h1>{t("home-giro-chiese:header")}</h1>;
+  return <p>San Giacomo Page</p>;
 }
