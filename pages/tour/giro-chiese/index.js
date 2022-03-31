@@ -18,14 +18,15 @@ export default function GiroChiese() {
         >
           <Card className="card-tour-chiese">
             <Image
-              alt="Annunziata - Termini Imerese"
+              alt="Santa Caterina"
               width="1200px"
               height="803px"
-              src="/cupolaAnnunziata.jpg"
+              src="/giro-chiese/s.caterina.jpg"
             />
             <Card.Body>
-              <Card.Title>{t("home-giro-chiese:title1")}</Card.Title>
-              <Card.Text>{t("home-giro-chiese:body1")}</Card.Text>
+              <Card.Title>
+                <h3>{t("home-giro-chiese:title1")}</h3>
+              </Card.Title>
               <ButtonA
                 className="button-text"
                 title="Inizia il Tour"
@@ -43,14 +44,15 @@ export default function GiroChiese() {
         >
           <Card className="card-tour-chiese">
             <Image
-              alt="Annunziata - Termini Imerese"
+              alt="Chiesa Del Monte"
               width="1200px"
               height="803px"
-              src="/cupolaAnnunziata.jpg"
+              src="/giro-chiese/chiesaMonte.jpg"
             />
             <Card.Body>
-              <Card.Title>{t("home-giro-chiese:title2")}</Card.Title>
-              <Card.Text>{t("home-giro-chiese:body2")}</Card.Text>
+              <Card.Title>
+                <h3>{t("home-giro-chiese:title2")}</h3>
+              </Card.Title>
               <ButtonA
                 className="button-text"
                 title="Inizia il Tour"
@@ -71,11 +73,12 @@ export default function GiroChiese() {
               alt="Annunziata - Termini Imerese"
               width="1200px"
               height="803px"
-              src="/cupolaAnnunziata.jpg"
+              src="/giro-chiese/Annunziata.jpg"
             />
             <Card.Body>
-              <Card.Title>{t("home-giro-chiese:title3")}</Card.Title>
-              <Card.Text>{t("home-giro-chiese:body3")}</Card.Text>
+              <Card.Title>
+                <h3>{t("home-giro-chiese:title3")}</h3>
+              </Card.Title>
               <ButtonA
                 className="button-text"
                 title="Inizia il Tour"
@@ -93,14 +96,15 @@ export default function GiroChiese() {
         >
           <Card className="card-tour-chiese">
             <Image
-              alt="Annunziata - Termini Imerese"
+              alt="Chiesa San Giacomo"
               width="1200px"
               height="803px"
-              src="/cupolaAnnunziata.jpg"
+              src="/giro-chiese/s.Giacomo.jpg"
             />
             <Card.Body>
-              <Card.Title>{t("home-giro-chiese:title4")}</Card.Title>
-              <Card.Text>{t("home-giro-chiese:body4")}</Card.Text>
+              <Card.Title>
+                <h3>{t("home-giro-chiese:title4")}</h3>
+              </Card.Title>
               <ButtonA
                 className="button-text"
                 title="Inizia il Tour"
@@ -119,13 +123,14 @@ export default function GiroChiese() {
           <Card className="card-tour-chiese">
             <Image
               alt="Annunziata - Termini Imerese"
-              width="1200px"
-              height="803px"
-              src="/cupolaAnnunziata.jpg"
+              width="800px"
+              height="903px"
+              src="/giro-chiese/matrice.jpg"
             />
             <Card.Body>
-              <Card.Title>{t("home-giro-chiese:title5")}</Card.Title>
-              <Card.Text>{t("home-giro-chiese:body5")}</Card.Text>
+              <Card.Title>
+                <h3>{t("home-giro-chiese:title5")}</h3>
+              </Card.Title>
               <ButtonA
                 className="button-text"
                 title="Inizia il Tour"

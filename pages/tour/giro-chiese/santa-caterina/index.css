@@ -1,0 +1,9 @@
+.tour-text-container {
+  font-size: 25px;
+  padding: 3% 16%;
+}
+
+.tour-text-container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}

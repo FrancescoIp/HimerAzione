@@ -4,6 +4,11 @@
   "pages": {
     "*": ["common"],
     "/chisiamo": ["chisiamo"],
-    "/tour/giro-chiese": ["home-giro-chiese"]
+    "/tour/giro-chiese": ["home-giro-chiese"],
+    "/tour/giro-chiese/santa-caterina": ["santa-caterina"],
+    "/tour/giro-chiese/chiesa-del-monte": ["chiesa-del-monte"],
+    "/tour/giro-chiese/maria-annunziata": ["maria-annunziata"],
+    "/tour/giro-chiese/san-giacomo": ["san-giacomo"],
+    "/tour/giro-chiese/duomo": ["duomo"]
   }
 }

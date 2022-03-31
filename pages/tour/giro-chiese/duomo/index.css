@@ -1,0 +1,7 @@
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+.copertina-img {
+  margin-right: 200px;
+}
