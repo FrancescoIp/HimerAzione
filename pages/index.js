@@ -8,13 +8,13 @@ import ArticoliEvidenza from "../components/ArticoliEvidenza";
 import { createClient } from "contentful";
 import useTranslation from "next-translate/useTranslation";
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
 
-  const res = await client.getEntries({ content_type: "blogPost" });
+  const res = await client.getEntries({ content_type: "blogPost", locale });
 
   return {
     props: {

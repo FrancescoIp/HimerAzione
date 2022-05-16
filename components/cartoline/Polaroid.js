@@ -1,18 +1,22 @@
-import Image from "next/dist/client/image"
+import Image from "next/dist/client/image";
+import useTranslation from "next-translate/useTranslation";
 
-export default function Polaroid({ title }) {
+export default function Polaroid() {
+  let { t } = useTranslation();
 
-    const h3Text = title ? title : 'Con affetto, himerazione <3'
+  return (
+    <div className="polaroid-body">
+      <div id="polaroid-image-frame">
+        <Image
+          alt="Annunziata - Termini Imerese"
+          width="1200px"
+          height="800px"
+          src="/cupolaAnnunziata.jpg"
+          priority
+        />
+      </div>
 
-
-    return (
-        <div className='polaroid-body'>
-            <div id="polaroid-image-frame">
-                <Image alt="Annunziata - Termini Imerese" width='1200px' height="800px" src="/cupolaAnnunziata.jpg" priority />
-            </div>
-
-            <h1>{h3Text}</h1>
-        </div>
-    )
-
+      <h1>{t("home:polaroid")}</h1>
+    </div>
+  );
 }

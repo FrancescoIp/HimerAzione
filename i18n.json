@@ -2,7 +2,8 @@
   "locales": ["it-IT", "en-US"],
   "defaultLocale": "it-IT",
   "pages": {
-    "*": ["common", "header"],
+    "*": ["common", "header", "home"],
+    "/": ["home"],
     "/chisiamo": ["chisiamo"],
     "/tour/giro-chiese": ["home-giro-chiese"],
     "/tour/giro-chiese/santa-caterina": ["santa-caterina"],
