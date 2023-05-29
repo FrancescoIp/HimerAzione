@@ -25,23 +25,11 @@ export async function getStaticProps({ locale }) {
 }
 
 export default function Home({ articoli }) {
-  const [viewCount, setViewCount] = useState(0);
-
-  useEffect(() => {
-    fetch("https://api.countapi.xyz/update/himerazione.it/count/?amount=1")
-      .then((res) => res.json())
-      .then((data) => {
-        setViewCount(data);
-      });
-  }, []);
-
   let { t } = useTranslation();
 
   return (
     <div className="homeBG">
       <CartolineHome />
-
-      <VisitCount viewCount={viewCount} />
 
       <JardinuPrev />
 
